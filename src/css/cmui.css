@@ -214,6 +214,18 @@ ol, ul {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.baseIcon-Android:before {
+  content: "\e908"; }
+
+.baseIcon-iphone:before {
+  content: "\e909"; }
+
+.baseIcon-mobile:before {
+  content: "\e90a"; }
+
+.baseIcon-WeChat:before {
+  content: "\e90b"; }
+
 .baseIcon-icon_1:before {
   content: "\e900"; }
 
@@ -5949,7 +5961,7 @@ button.swiper-pagination-bullet {
 
 .mask {
   z-index: 1000;
-  background-color: rgba(0, 0, 0, 0.4); }
+  background-color: rgba(0, 0, 0, 0.7); }
   .mask.mask-white {
     background-color: rgba(255, 255, 255, 0.4); }
     .mask.mask-white .mask-close {

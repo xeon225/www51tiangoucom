@@ -8,11 +8,11 @@
     <div class="pos-r flex-container center" style="min-width:1280px;">
       <div class="content pos-a flex-container top" style="top:60px;">
         <div>
-          <img src="./images/text-01.png" width="582" alt="">
+          <img src="/static/img/text-01.png" width="582" alt="">
         </div>
-        <div><img src="./images/download-app.png" alt="" width="357"></div>
+        <div><img src="/static/img/download-app.png" alt="" width="357"></div>
       </div>
-      <img src="./images/banner-index.png" alt="">
+      <img src="/static/img/banner-index.png" alt="">
     </div>
     <!-- 产品介绍 -->
     <div class="content bg-white pos-r shadow" style="margin-top:-120px;">
@@ -65,28 +65,28 @@ export default {
           icon:"baseIcon-icon_1",
           enName:"Electronic<br>member",
           color:"background-image: -webkit-linear-gradient(left top , rgb(255, 255, 255) 0%, #F366B1 90%);",
-          content:"会员身份电子化、移动化，顾客可以在收银台用手机开通门店电子会员卡，也可通过手机绑定原门店会员卡，实现随时开通，随时查询积分，并随时可以用积分进行超市商品、彩票、高额抵值券的兑换。"
+          content:"会员卡电子移动化，随时在线积分查询。积分可用于门店商品、高额抵值券的兑换。"
         },
         {
           name:"专柜收银",
           icon:"baseIcon-icon_2",
           enName:"Counters<br>cashier",
           color:"background-image: -webkit-linear-gradient(left top , rgb(255, 255, 255) 0%, #26A8FF 90%);",
-          content:"取代传统纸质小票模式，实现了商品电子化及交易电子化。既提升了现场成交率，又增加了二次营销通道，增加顾客离店推荐关联消费。改变了原百货纸质小票对消费数据采集的颗粒度，更全面的收集到了顾客消费信息，形成顾客画像。"
+          content:"取代专柜开票，顾客款台排队结算的模式。通过天狗网完成交易支付并提货，购物方面又快捷。"
         },
         {
           name:"云货架",
           icon:"baseIcon-icon_3",
           enName:"Shelf<br>clouds",
           color:"background-image: -webkit-linear-gradient(left bottom , rgb(255, 255, 255) 0%, #BC65E4 90%);",
-          content:"为实体门店各个专柜创建线上店铺，延展店铺卖货的时间和空间，让实体门店也能与电商一样实现24小时营业。"
+          content:"实体门店在线24小时营业，货源品质有保障。专柜的品质，电商的价格。"
         },
         {
           name:"精准营销",
           icon:"baseIcon-icon_4",
           enName:"Precision<br>marketing",
           color:"background-image: -webkit-linear-gradient(left top , rgb(255, 255, 255) 0%, #FF9800 90%);",
-          content:"通过精准营销工具，能够更有准确的触达顾客，提高顾客进店消费数量及提袋率。"
+          content:"通过会员、交易、商品的电子化，完善顾客画像。通过大数据分析，实现精准营销及推送。"
         }
       ],
       storeProTwo:[
@@ -95,28 +95,28 @@ export default {
           icon:"baseIcon-icon_5",
           enName:"Smart<br>parking",
           color:"background-image: -webkit-linear-gradient(left top , rgb(255, 255, 255) 0%, #6ED232 90%);",
-          content:"在普通的智能停车基础上，打通店内交易及积分体系，实现店内交易自动送停车券，积分支付停车费用等功能，为逛店顾客提供更好的服务。"
+          content:"智能识别，移动支付。享受购物送停车券，积分支付停车费。购物出行方便多多。"
         },
         {
           name:"扫码购",
           icon:"baseIcon-icon_6",
           enName:"Sweep<br>shopping",
           color:"background-image: -webkit-linear-gradient(left top , rgb(255, 255, 255) 0%, #FF5B00 90%);",
-          content:"为超市顾客提供新型的购物体验，顾客通过天狗网实现扫描超市商品条码加入线上购物车，完成支付后即可离店，摆脱排队烦恼。"
+          content:"通过天狗网实现现场扫描超市商品条码加入线上购物车，完成支付后即可离店，摆脱排队结账烦恼。"
         },
         {
           name:"极速达",
           icon:"baseIcon-icon_7",
           enName:"Fast<br>delivery",
           color:"background-image: -webkit-linear-gradient(left top , rgb(255, 255, 255) 0%, #26D0C8 90%);",
-          content:"为超市店铺提供3公里范围顾客提供极速送达服务，增加门店线上销售渠道，让顾客更快的买到心仪商品。"
+          content:"超市门店提供3公里范围内极速送配送服务，生鲜果蔬新鲜到家。"
         },
         {
           name:"收藏间",
           icon:"baseIcon-icon_8",
           enName:"The collection<br>between",
           color:"background-image: -webkit-linear-gradient(left top , rgb(255, 255, 255) 0%, #FF4C48 90%);",
-          content:"逛店顾客试衣后，对于犹豫购买商品可进行拍照，并扫码收藏商品。顾客可收到降价信息及精准推送的优惠券，促进顾客购买转化，为专柜导购提升转化提供帮助。"
+          content:"购物时有点犹豫？商品加入收藏间，降价活动随时了解。"
         }
       ]
     }
