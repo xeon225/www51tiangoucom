@@ -239,7 +239,7 @@ blockquote,  dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, pre
 	}
 }
 
-@for $i from 0 through $layoutNumber{
+@for $i from 0 through $layoutNumber*2{
 	// .margin#{$i * 10}{margin:getLayoutSize($i,1)}
 	// .margint#{$i * 10}{margin-top:getLayoutSize($i,1)}
 	// .marginb#{$i * 10}{margin-bottom:getLayoutSize($i,1)}

@@ -5,34 +5,21 @@
       <span class="fs-18 marginl15">企业官网</span>
     </div>
     <div class="nav flex-container fs-18">
-      <div v-for="(item,$index) in navData"><a :href="item.url" v-text="item.name" :class="$index === active && 'active'"></a></div>
+      <div v-for="(item,$index) in navData">
+        <a v-if="$index != 2" :href="item.url" v-text="item.name" :class="$index === active && 'active'"></a>
+        <a v-if="$index == 2"  v-text="item.name" :class="$index === active && 'active'" @click="prCode = true"></a>
+      </div>
     </div>
-    <div class="mask flex-container center">
+
+    <!-- 二维码下载 -->
+    <div class="mask flex-container center" v-show="prCodeTo || prCode">
       <div class="downLoad bg-white pos-r flex-container">
-        <div class="down flex-container-col" @mouseover="changPr(item.url)" v-for="item in prData">
+        <div class="down flex-container-col" :class="prDefault == item.url && 'active'" @mouseover="changPrUrl(item.url)" v-for="item in prData">
           <div class="flex3 flex-container center">
             <i :class="item.icon"></i>
           </div>
           <div class="flex1 fs-18 text" v-text="item.name"></div>
         </div>
-<!--         <div class="down flex-container-col">
-          <div class="flex3 flex-container center">
-            <i class="baseIcon-Android"></i>
-          </div>
-          <div class="flex1 fs-18 text">Android</div>
-        </div>
-        <div class="down flex-container-col">
-          <div class="flex3 flex-container center">
-            <i class="baseIcon-mobile"></i>
-          </div>
-          <div class="flex1 fs-18 text">触屏版</div>
-        </div>
-        <div class="down flex-container-col">
-          <div class="flex3 flex-container center">
-            <i class="baseIcon-WeChat"></i>
-          </div>
-          <div class="flex1 fs-18 text">WeChat</div>
-        </div> -->
         <div class="downPr flex-container-col">
           <div class="flex-container center">
             <div class="prBox pos-r flex-container center">
@@ -43,6 +30,7 @@
           </div>
           <span class="margint25">手机扫描快速下载</span>
         </div>
+        <div class="pos-a right0" style="top:-60px;cursor: pointer;" @click="prShowFn(false)"><i class="baseIcon-roundclose text-white" style="font-size:40px;"></i></div>
       </div>
     </div>
   </div>
@@ -56,6 +44,10 @@ export default {
     active:{
       type:Number,
       default:0
+    },
+    prShow:{
+      type:Boolean,
+      default:false
     }
   },
   data: function(){
@@ -71,7 +63,7 @@ export default {
         },
         {
           name:"下载APP",
-          url:"/index.html"
+          url:"#"
         },
         {
           name:"商家入驻",
@@ -100,16 +92,27 @@ export default {
           url:"pr-WeChat.png"
         }
       ],
+      prCode:this.prShow,
       prDefault:"pr-iphone.png"
     }
   },
-  events:{
-
-  }, 
+  ready(){
+    this.prCodeTo()
+  },
+  computed:{
+    prCodeTo(){
+      console.log(this.prShow,111)
+      return this.prCode = this.prShow;
+    }
+  },
   methods: {
-    changPr: function(url){
+    changPrUrl: function(url){
       this.prDefault = url;
-      console.log(this.prDefault)
+      // console.log(this.prDefault)
+    },
+    prShowFn:function(b){
+      this.prCode = b;
+      this.$emit('emitData',false)
     }
   }
 };

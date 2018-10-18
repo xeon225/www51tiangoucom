@@ -2,7 +2,7 @@
   <div id="app">
     <!-- 头部导航 -->
     <div class="content">
-      <tg-head :active="0"></tg-head>
+      <tg-head :active="0" :prShow="pr" @emitData='getData'></tg-head>
     </div>
     <!-- banner图 -->
     <div class="pos-r flex-container center" style="min-width:1280px;">
@@ -10,7 +10,7 @@
         <div>
           <img src="/static/img/text-01.png" width="582" alt="">
         </div>
-        <div><img src="/static/img/download-app.png" alt="" width="357"></div>
+        <div @click="prChange()" style="cursor: pointer;"><img src="/static/img/download-app.png" alt="" width="357"></div>
       </div>
       <img src="/static/img/banner-index.png" alt="">
     </div>
@@ -47,6 +47,84 @@
         </div>
       </div>
     </div>
+    <!-- 天狗商务动态 -->
+    <div class="content" style="margin-top:60px;">
+      <div style="font-size: 38px;">天狗<span class="text-red">商务动态</span></div>
+      <div class="fs-18 text-light margint5">TIANGOU NEWS</div>
+      <div class="flex-container vfull" style="margin-top:40px;">
+        <div class="flex-container vfull shadow padding30" style="width:750px;">
+          <img src="/static/img/new/img-new_1.png" width="280" height="205" alt="">
+          <div class="marginl20 flex-container-col">
+            <div class="text-limit2" style="font-size: 24px; width:100%"><a href="">大商集团副总裁、天狗网总裁刘思军出任大商集团总裁</a></div>
+            <div class="fs-18 text-dark text-limit3" style="width:100%">大商集团召开公司股东会，产生八届一次董事会监事会及高管。记者获悉，大商集团副总裁、天狗网总裁刘思军履新，出任大商集团总裁。</div>
+            <div class="flex-container fs-16 margint20" style="width:100%">
+              <div class="text-dark">来源：联商快讯  2016/04/28</div>
+              <span><a href="" class="text-red">MORE</a></span>
+            </div>
+          </div>
+        </div>
+        <div class="flex1 paddingh30 paddingv25 shadow marginl30 flex-container-col vfull">
+          <div class="fs-18 flex-container center" v-for="item in [0,1,2,3,4]">
+            <div class="text-limit1 newsList pos-r paddingl20" style="width:100%"><a href="">中国连锁经营协会公布2016年度行业百强榜单中国连锁经营协会公布2016年度行业百强榜单</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 天狗2017大数据 -->
+    <div class="dataReport" style="padding-bottom:75px;">
+      <div class="content">
+        <div style="font-size: 38px;">天狗2017<span class="text-red">大数据</span></div>
+        <div class="fs-18 text-light margint5">TIANGOU DATA ANNUAL REPORT</div>
+        <div class="flex-container text-center margint50">
+          <div class="flex1" v-for="(item,$index) in iconReportData">
+            <div class="flex-container center bottom" style="height:120px;">
+              <div class="iconReport flex-container center" :class="$index == iconReportActive && 'active'"><i :class="item.icon"></i></div>
+            </div>
+            <div class="margint25" style="font-size:24px;color:#151515;"><span class="text-red" style="font-size: 36px;" v-text="item.name"></span> {{item.pi}}</div>
+            <div class="fs-18 text-dark margint5" v-text="item.content"></div>
+          </div>
+          <!-- <div class="flex1">
+            <div class="flex-container center bottom" style="height:120px;">
+              <div class="iconReport active flex-container center"><i class="baseIcon-icon_10"></i></div>
+            </div>
+            <div class="margint25" style="font-size:24px;color:#151515;"><span class="text-red" style="font-size: 36px;">69,054,688</span> UV</div>
+            <div class="fs-18 text-dark margint5">全年平台访问总额</div>
+          </div>
+          <div class="flex1">
+            <div class="flex-container center bottom" style="height:120px;">
+              <div class="iconReport flex-container center"><i class="baseIcon-icon_1"></i></div>
+            </div>
+            <div class="margint25" style="font-size:24px;color:#151515;"><span class="text-red" style="font-size: 36px;">1000万+</span> 人</div>
+            <div class="fs-18 text-dark margint5">注册天狗会员数</div>
+          </div>
+          <div class="flex1">
+            <div class="flex-container center bottom" style="height:120px;">
+              <div class="iconReport flex-container center"><i class="baseIcon-icon_9"></i></div>
+            </div>
+            <div class="margint25" style="font-size:24px;color:#151515;"><span class="text-red" style="font-size: 36px;">5987584</span> 人</div>
+            <div class="fs-18 text-dark margint5">全年交易人数</div>
+          </div>
+          <div class="flex1">
+            <div class="flex-container center bottom" style="height:120px;">
+              <div class="iconReport flex-container center"><i class="baseIcon-icon_6"></i></div>
+            </div>
+            <div class="margint25" style="font-size:24px;color:#151515;"><span class="text-red" style="font-size: 36px;">12.2亿</span> 元</div>
+            <div class="fs-18 text-dark margint5">天狗移动支付交易额</div>
+          </div>
+          <div class="flex1">
+            <div class="flex-container center bottom" style="height:120px;">
+              <div class="iconReport flex-container center"><i class="baseIcon-icon_4"></i></div>
+            </div>
+            <div class="margint25" style="font-size:24px;color:#151515;"><span class="text-red" style="font-size: 36px;">12.1亿</span> 元</div>
+            <div class="fs-18 text-dark margint5">精准营销增量交易额</div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- 底部导航 -->
+    <tg-foot></tg-foot>
   </div>
 </template>
 
@@ -54,11 +132,13 @@
 import Vue from 'vue';
 
 import tgHead from './components/libs/head/index.js';
+import tgFoot from './components/libs/foot/index.js';
 
 export default {
   name: 'App',
   data: function(){
     return {
+      pr:false,
       storeProOne:[
         {
           name:"电子会员",
@@ -118,7 +198,60 @@ export default {
           color:"background-image: -webkit-linear-gradient(left top , rgb(255, 255, 255) 0%, #FF4C48 90%);",
           content:"购物时有点犹豫？商品加入收藏间，降价活动随时了解。"
         }
-      ]
+      ],
+      iconReportData:[
+        {
+          name:"69,054,688",
+          pi:"UV",
+          icon:"baseIcon-icon_10",
+          content:"全年平台访问总额"
+        },
+        {
+          name:"1000万+",
+          pi:"人",
+          icon:"baseIcon-icon_1",
+          content:"注册天狗会员数"
+        },
+        {
+          name:"5987584",
+          pi:"人",
+          icon:"baseIcon-icon_9",
+          content:"全年交易人数"
+        },
+        {
+          name:"12.2亿",
+          pi:"元",
+          icon:"baseIcon-icon_6",
+          content:"天狗移动支付交易额"
+        },
+        {
+          name:"12.1亿",
+          pi:"元",
+          icon:"baseIcon-icon_4",
+          content:"精准营销增量交易额"
+        }
+      ],
+      iconReportActive:0
+    }
+  },
+  mounted() {
+    // setTimeout(this.count(),1000);
+    window.setInterval(this.count,3000);
+  },
+  methods: {
+    prChange(){
+      this.pr = true;
+    },
+    getData(data){
+      this.pr = data;
+    },
+    count(){
+      var n = this.iconReportActive;
+      if (n < 4) {
+        this.iconReportActive = this.iconReportActive + 1;
+      } else {
+        this.iconReportActive = 0;
+      }
     }
   }
 }
@@ -176,5 +309,52 @@ export default {
 .shadow{
   box-shadow: 0 5px 25px 0 rgba(255,76,72,0.10);
   border-radius:6px;
+}
+.newsList:after{
+  content:'';
+  position:absolute;
+  width:10px;
+  height:10px;
+  background:#666;
+  left:0;
+  top:7px;
+}
+.newsList:hover:after{
+  background:#ff4c48;
+}
+.newsList:hover a{
+  color:#ff4c48;
+}
+.dataReport{
+  background-color: #FFF6F6;
+  margin-top:60px;
+  padding-top:60px;
+  background-image: url(/static/img/bg-report_1.png), url(/static/img/bg-report_2.png);
+  background-position: right top,left bottom; 
+  background-repeat: no-repeat, no-repeat; 
+}
+.dataReport .iconReport{
+  width:100px;
+  height:100px;
+  background: #fff;
+  box-shadow: 0 5px 25px 0 rgba(255,76,72,0.10);
+  border-radius:50%;
+  font-size:44px;
+}
+.dataReport .iconReport i{
+  background-image: linear-gradient(left top, #FFF8F8 0%, #FF4C48 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.dataReport .iconReport.active{
+  width:120px;
+  height:120px;
+  background-image: linear-gradient(-133deg, #FFB0A0 0%, #FF4C48 100%);
+  font-size:55px;
+  transition: width 0.3s,height 0.3s,font-size 0.3s,background-image 0.3s;
+}
+.dataReport .iconReport.active i{
+  background-image: linear-gradient(left top, #fff 0%, #fff 100%);
+
 }
 </style>
