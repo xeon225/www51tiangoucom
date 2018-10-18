@@ -7,6 +7,10 @@ import './css/cmui.css'
 
 Vue.config.productionTip = false
 
+import common from './assets/common.js';
+Vue.prototype.common = common
+Vue.config.productionTip = false;
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
