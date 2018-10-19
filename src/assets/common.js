@@ -1,6 +1,6 @@
 
 export default{
-    browser:function(){
+    browserA:function(){
         var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串
 		var isOpera = userAgent.indexOf("Opera") > -1;
 		//判断是否Opera浏览器
