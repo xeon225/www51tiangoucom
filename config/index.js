@@ -45,8 +45,8 @@ module.exports = {
 
   build: {
     // Template for index.html
-    index: path.resolve(__dirname, '../dist/index.html'),
-    about: path.resolve(__dirname, '../dist/about.html'),
+    index: path.resolve(__dirname, '../dist/index.html'),   //首页
+    about: path.resolve(__dirname, '../dist/about.html'),   //产品介绍
 
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),

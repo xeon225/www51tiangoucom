@@ -62,6 +62,8 @@ const webpackConfig = merge(baseWebpackConfig, {
     // generate dist index.html with correct asset hash for caching.
     // you can customize output by editing /index.html
     // see https://github.com/ampedandwired/html-webpack-plugin
+
+    //首页
     new HtmlWebpackPlugin({
       filename: process.env.NODE_ENV === 'testing'
         ? 'index.html'
@@ -78,9 +80,12 @@ const webpackConfig = merge(baseWebpackConfig, {
       // necessary to consistently work with multiple chunks via CommonsChunkPlugin
       chunksSortMode: 'dependency'
     }),
+    //产吕介绍
     new HtmlWebpackPlugin({
-      filename: config.build.about,
-      template: './tpl/about/about.html',
+      filename: process.env.NODE_ENV === 'testing'
+        ? '/store/about.html'
+        : config.build.about,
+      template: './tpl/store/about.html',
       inject: true,
       minify: {
         removeComments: true,

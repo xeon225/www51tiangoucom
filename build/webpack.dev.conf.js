@@ -52,15 +52,19 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     new webpack.NamedModulesPlugin(), // HMR shows correct file names in console on update.
     new webpack.NoEmitOnErrorsPlugin(),
     // https://github.com/ampedandwired/html-webpack-plugin
+
+    //首页
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: 'index.html',
       inject: true,
       chunks:['app']
     }),
+
+    //产品介绍
     new HtmlWebpackPlugin({
-      filename: 'about.html',
-      template: './tpl/about/about.html',
+      filename: 'store/about.html',
+      template: 'tpl/store/about.html',
       inject: true,
       chunks:['about']
     }),

@@ -101,7 +101,6 @@ export default {
   },
   computed:{
     prCodeTo(){
-      console.log(this.prShow,111)
       return this.prCode = this.prShow;
     }
   },

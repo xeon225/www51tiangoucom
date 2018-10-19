@@ -119,7 +119,7 @@ export default {
         {
           name:"电子会员",
           icon:"baseIcon-icon_1",
-          enName:"Electronic<br>member",
+          enName:"Electronic member",
           color:"background-image: -webkit-linear-gradient(left top , rgb(255, 255, 255) 0%, #F366B1 90%);",
           colorIE:"color:#F366B1",
           content:"会员卡电子移动化，随时在线积分查询。积分可用于门店商品、高额抵值券的兑换。"
@@ -127,7 +127,7 @@ export default {
         {
           name:"专柜收银",
           icon:"baseIcon-icon_2",
-          enName:"Counters<br>cashier",
+          enName:"Counters cashier",
           color:"background-image: -webkit-linear-gradient(left top , rgb(255, 255, 255) 0%, #26A8FF 90%);",
           colorIE:"color:#26A8FF",
           content:"取代专柜开票，顾客款台排队结算的模式。通过天狗网完成交易支付并提货，购物方面又快捷。"
@@ -135,7 +135,7 @@ export default {
         {
           name:"云货架",
           icon:"baseIcon-icon_3",
-          enName:"Shelf<br>clouds",
+          enName:"Shelf clouds",
           color:"background-image: -webkit-linear-gradient(left bottom , rgb(255, 255, 255) 0%, #BC65E4 90%);",
           colorIE:"color:#BC65E4",
           content:"实体门店在线24小时营业，货源品质有保障。专柜的品质，电商的价格。"
@@ -143,7 +143,7 @@ export default {
         {
           name:"精准营销",
           icon:"baseIcon-icon_4",
-          enName:"Precision<br>marketing",
+          enName:"Precision marketing",
           color:"background-image: -webkit-linear-gradient(left top , rgb(255, 255, 255) 0%, #FF9800 90%);",
           colorIE:"color:#FF9800",
           content:"通过会员、交易、商品的电子化，完善顾客画像。通过大数据分析，实现精准营销及推送。"
@@ -153,7 +153,7 @@ export default {
         {
           name:"智能停车",
           icon:"baseIcon-icon_5",
-          enName:"Smart<br>parking",
+          enName:"Smart parking",
           color:"background-image: -webkit-linear-gradient(left top , rgb(255, 255, 255) 0%, #6ED232 90%);",
           colorIE:"color:#6ED232",
           content:"智能识别，移动支付。享受购物送停车券，积分支付停车费。购物出行方便多多。"
@@ -161,7 +161,7 @@ export default {
         {
           name:"扫码购",
           icon:"baseIcon-icon_6",
-          enName:"Sweep<br>shopping",
+          enName:"Sweep shopping",
           color:"background-image: -webkit-linear-gradient(left top , rgb(255, 255, 255) 0%, #FF5B00 90%);",
           colorIE:"color:#FF5B00",
           content:"通过天狗网实现现场扫描超市商品条码加入线上购物车，完成支付后即可离店，摆脱排队结账烦恼。"
@@ -169,7 +169,7 @@ export default {
         {
           name:"极速达",
           icon:"baseIcon-icon_7",
-          enName:"Fast<br>delivery",
+          enName:"Fast delivery",
           color:"background-image: -webkit-linear-gradient(left top , rgb(255, 255, 255) 0%, #26D0C8 90%);",
           colorIE:"color:#26D0C8",
           content:"超市门店提供3公里范围内极速送配送服务，生鲜果蔬新鲜到家。"
@@ -177,7 +177,7 @@ export default {
         {
           name:"收藏间",
           icon:"baseIcon-icon_8",
-          enName:"The collection<br>between",
+          enName:"The collection between",
           color:"background-image: -webkit-linear-gradient(left top , rgb(255, 255, 255) 0%, #FF4C48 90%);",
           colorIE:"color:#FF4C48",
           content:"购物时有点犹豫？商品加入收藏间，降价活动随时了解。"
@@ -312,10 +312,7 @@ export default {
   height:3px;
   background:#ebebeb;
 }
-.shadow{
-  box-shadow: 0 5px 25px 0 rgba(255,76,72,0.10);
-  border-radius:6px;
-}
+
 .newsList:after{
   content:'';
   position:absolute;
