@@ -20,7 +20,7 @@
         <div class="flex1 storePro one" v-for="item in storeProOne">
           <div class="flex-container center storeAfter pos-r">
             <div class="pos-r">
-              <i :class="item.icon" :style="item.color"></i>
+              <i :class="(isInArray(browser_2,browserA) && 'iconHover') +' '+ item.icon" :style="!isInArray(browser_2,browserA) ? item.color : item.colorIE"></i>
               <div class="pos-a top0 right0 left0 bottom0"></div>
             </div>
           </div>
@@ -35,7 +35,7 @@
         <div class="flex1 storePro" v-for="item in storeProTwo">
           <div class="flex-container center storeAfter pos-r">
             <div class="pos-r">
-              <i :class="item.icon" :style="item.color"></i>
+              <i :class="(isInArray(browser_2,browserA) && 'iconHover') +' '+ item.icon" :style="!isInArray(browser_2,browserA) ? item.color : item.colorIE"></i>
               <div class="pos-a top0 right0 left0 bottom0"></div>
             </div>
           </div>
@@ -121,6 +121,7 @@ export default {
           icon:"baseIcon-icon_1",
           enName:"Electronic<br>member",
           color:"background-image: -webkit-linear-gradient(left top , rgb(255, 255, 255) 0%, #F366B1 90%);",
+          colorIE:"color:#F366B1",
           content:"会员卡电子移动化，随时在线积分查询。积分可用于门店商品、高额抵值券的兑换。"
         },
         {
@@ -128,6 +129,7 @@ export default {
           icon:"baseIcon-icon_2",
           enName:"Counters<br>cashier",
           color:"background-image: -webkit-linear-gradient(left top , rgb(255, 255, 255) 0%, #26A8FF 90%);",
+          colorIE:"color:#26A8FF",
           content:"取代专柜开票，顾客款台排队结算的模式。通过天狗网完成交易支付并提货，购物方面又快捷。"
         },
         {
@@ -135,6 +137,7 @@ export default {
           icon:"baseIcon-icon_3",
           enName:"Shelf<br>clouds",
           color:"background-image: -webkit-linear-gradient(left bottom , rgb(255, 255, 255) 0%, #BC65E4 90%);",
+          colorIE:"color:#BC65E4",
           content:"实体门店在线24小时营业，货源品质有保障。专柜的品质，电商的价格。"
         },
         {
@@ -142,6 +145,7 @@ export default {
           icon:"baseIcon-icon_4",
           enName:"Precision<br>marketing",
           color:"background-image: -webkit-linear-gradient(left top , rgb(255, 255, 255) 0%, #FF9800 90%);",
+          colorIE:"color:#FF9800",
           content:"通过会员、交易、商品的电子化，完善顾客画像。通过大数据分析，实现精准营销及推送。"
         }
       ],
@@ -151,6 +155,7 @@ export default {
           icon:"baseIcon-icon_5",
           enName:"Smart<br>parking",
           color:"background-image: -webkit-linear-gradient(left top , rgb(255, 255, 255) 0%, #6ED232 90%);",
+          colorIE:"color:#6ED232",
           content:"智能识别，移动支付。享受购物送停车券，积分支付停车费。购物出行方便多多。"
         },
         {
@@ -158,6 +163,7 @@ export default {
           icon:"baseIcon-icon_6",
           enName:"Sweep<br>shopping",
           color:"background-image: -webkit-linear-gradient(left top , rgb(255, 255, 255) 0%, #FF5B00 90%);",
+          colorIE:"color:#FF5B00",
           content:"通过天狗网实现现场扫描超市商品条码加入线上购物车，完成支付后即可离店，摆脱排队结账烦恼。"
         },
         {
@@ -165,6 +171,7 @@ export default {
           icon:"baseIcon-icon_7",
           enName:"Fast<br>delivery",
           color:"background-image: -webkit-linear-gradient(left top , rgb(255, 255, 255) 0%, #26D0C8 90%);",
+          colorIE:"color:#26D0C8",
           content:"超市门店提供3公里范围内极速送配送服务，生鲜果蔬新鲜到家。"
         },
         {
@@ -172,6 +179,7 @@ export default {
           icon:"baseIcon-icon_8",
           enName:"The collection<br>between",
           color:"background-image: -webkit-linear-gradient(left top , rgb(255, 255, 255) 0%, #FF4C48 90%);",
+          colorIE:"color:#FF4C48",
           content:"购物时有点犹豫？商品加入收藏间，降价活动随时了解。"
         }
       ],
@@ -210,7 +218,8 @@ export default {
       iconReportActive:0,
       browser:true,
       browserA:'',
-      browser_1:['FF','IE','Edge']
+      browser_1:['FF','IE','Edge'],
+      browser_2:['IE','Edge']
       // browserA:['Opera','FF','Chrome','Safari','IE','Edge']
     }
   },
@@ -276,6 +285,7 @@ export default {
   font-size: 60px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  line-height: 65px;
 }
 .storePro:hover .noHover{
   display:none;
@@ -286,12 +296,17 @@ export default {
 .storePro:hover i{
   background-image: -webkit-linear-gradient(left top , white, white) !important;
 }
+.storePro:hover i.iconHover{
+  color:#fff !important;
+}
 .storePro:hover .storeAfter:after{
   background:#fff;
 }
 .storePro .storeAfter:after{
   content:'';
   position: absolute;
+  left:50%;
+  margin-left:-10px;
   bottom:20px;
   width:20px;
   height:3px;
@@ -336,6 +351,8 @@ export default {
   background-image: linear-gradient(left top, #FFF8F8 0%, #FF4C48 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  color:#ff4c48;
+  line-height: 65px;
 }
 .dataReport .iconReport.active{
   width:120px;
@@ -346,6 +363,7 @@ export default {
 }
 .dataReport .iconReport.active i{
   background-image: linear-gradient(left top, #fff 0%, #fff 100%);
+  color:#fff;
 }
 
 </style>
