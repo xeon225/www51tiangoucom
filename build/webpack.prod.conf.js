@@ -80,7 +80,22 @@ const webpackConfig = merge(baseWebpackConfig, {
       // necessary to consistently work with multiple chunks via CommonsChunkPlugin
       chunksSortMode: 'dependency'
     }),
-    //产吕介绍
+    //商家入驻
+    new HtmlWebpackPlugin({
+      filename: process.env.NODE_ENV === 'testing'
+        ? '/store/index.html'
+        : config.build.store,
+      template: './tpl/store/index.html',
+      inject: true,
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true,
+        removeAttributeQuotes: true
+      },
+      chunksSortMode: 'dependency',
+      chunks: ['manifest', 'vendor', 'store']
+    }),
+    //产品介绍
     new HtmlWebpackPlugin({
       filename: process.env.NODE_ENV === 'testing'
         ? '/store/about.html'

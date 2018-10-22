@@ -61,6 +61,14 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       chunks:['app']
     }),
 
+    //商家入驻
+    new HtmlWebpackPlugin({
+      filename: 'store/index.html',
+      template: 'tpl/store/index.html',
+      inject: true,
+      chunks:['store']
+    }),
+
     //产品介绍
     new HtmlWebpackPlugin({
       filename: 'store/about.html',

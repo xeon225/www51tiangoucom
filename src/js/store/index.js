@@ -1,15 +1,19 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
-import About from '../components/About.vue'
-// import router from './router'
+import Store from '../../components/store/Index.vue'
+import '../../css/cmui.css'
 
 Vue.config.productionTip = false
 
+import common from '../../assets/common.js';
+Vue.prototype.common = common
+Vue.config.productionTip = false;
+
 /* eslint-disable no-new */
 new Vue({
-  el: '#about',
+  el: '#store',
   // router,
-  components: { About },
-  template: '<about/>'
+  components: { Store },
+  template: '<store/>'
 })

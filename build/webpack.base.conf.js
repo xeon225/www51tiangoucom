@@ -23,6 +23,7 @@ module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
     app: './src/main.js', //首页
+    store:'./src/js/store/index.js', //商家入驻
     about:'./src/js/store/about.js' //产品介绍
   },
   output: {
