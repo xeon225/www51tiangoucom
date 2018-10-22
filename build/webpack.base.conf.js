@@ -24,7 +24,8 @@ module.exports = {
   entry: {
     app: './src/main.js', //首页
     store:'./src/js/store/index.js', //商家入驻
-    about:'./src/js/store/about.js' //产品介绍
+    about:'./src/js/store/about.js', //产品介绍
+    news:'./src/js/news/index.js' //新闻详情
   },
   output: {
     path: config.build.assetsRoot,

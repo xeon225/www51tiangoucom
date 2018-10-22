@@ -58,7 +58,7 @@
           </div>
           <div class="marginl20 flex1" :class="!isInArray(browser_1,browserA) && 'flex-container-col'">
             <div :class="!isInArray(browser_1,browserA) ? 'text-limit2' : 'ellipsis ellipsis_1'" style="font-size:24px;">
-              <div><p>大商集团副总裁、天狗网总裁刘思军出任大商集团总裁大商集团副总裁、天狗网总裁刘思军出任大商集团总裁</p></div>
+              <div><p><a href="/news/index.html">大商集团副总裁、天狗网总裁刘思军出任大商集团总裁大商集团副总裁、天狗网总裁刘思军出任大商集团总裁</a></p></div>
               <span class="ellipsis_1-after ellipsis-after" v-show="isInArray(browser_1,browserA)"> ... </span>
             </div>
             <div class="fs-18 text-dark" :class="!isInArray(browser_1,browserA) ? 'text-limit3' : 'margint15 ellipsis ellipsis_2'" style="width:100%"><div><p>大商集团召开公司股东会，产生八届一次董事会监事会及高管。记者获悉，大商集团副总裁、天狗网总裁刘思军履新，出任大商集团总裁。大商集团召开公司股东会，产生八届一次董事会监事会及高管。记者获悉，大商集团副总裁、天狗网总裁刘思军履新，出任大商集团总裁。</p></div><span class="ellipsis_2-after ellipsis-after" v-show="!browser"> ... </span></div>

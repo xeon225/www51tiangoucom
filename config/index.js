@@ -46,9 +46,9 @@ module.exports = {
   build: {
     // Template for index.html
     index: path.resolve(__dirname, '../dist/index.html'),   //首页
-    store: path.resolve(__dirname, '../dist/store/index.html'),   //产品介绍
+    store: path.resolve(__dirname, '../dist/store/index.html'),   //商家入驻
     about: path.resolve(__dirname, '../dist/store/about.html'),   //产品介绍
-
+    news: path.resolve(__dirname, '../dist/news/index.html'),   //新闻详情
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
