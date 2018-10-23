@@ -16,7 +16,7 @@
       <div class="downLoad bg-white pos-r flex-container">
         <div class="down flex-container-col" :class="prDefault == item.url && 'active'" @mouseover="changPrUrl(item.url)" v-for="item in prData">
           <div class="flex3 flex-container center">
-            <i :class="item.icon"></i>
+            <i :class="item.icon" style="line-height:105px;"></i>
           </div>
           <div class="flex1 fs-18 text" v-text="item.name"></div>
         </div>
@@ -147,6 +147,7 @@ export default {
     background-image: -webkit-linear-gradient(left top , #FFF8F8 0%, #666666 90%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    color:#666;
   }
   .downLoad .down .text{
     color:#666;
@@ -162,6 +163,7 @@ export default {
   }
   .downLoad .down:hover i,.downLoad .down.active i{
     background-image: -webkit-linear-gradient(left top , #FFF8F8 0%, #FF4C48 90%);
+    color:#ff4c48;
   }
   .downLoad .down:hover .text,.downLoad .down.active .text{
     color:#ff4c48;

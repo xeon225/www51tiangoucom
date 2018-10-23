@@ -5,7 +5,7 @@
       <tg-head :active="1"></tg-head>
     </div>
     <div class="bannerS flex-container">
-      <div class="content flex-container-col hfull left">
+      <div class="content flex-container-col left">
         <div style="font-size: 38px;">{{msg.enL}} <span class="text-red">{{msg.enR}}</span></div>
         <div class="text-light" style="font-size: 24px;">{{msg.title}}</div>
       </div>
@@ -22,7 +22,7 @@
           <div class="flex1 flex-container center padding30">
             <div class="storePro">
               <div class="flex-container center storeAfter pos-r">
-                <div class="pos-r"><i :class="item.icon" :style="item.color"></i>
+                <div class="pos-r"><i :class="item.icon" :style="item.color+item.colorIE"></i>
                 </div>
               </div>
               <div class="text-center margint20">
@@ -165,6 +165,7 @@ export default {
   line-height: 65px;
 }
 .store:hover .storePro i{
+  color:#fff !important;
   background-image: -webkit-linear-gradient(left top , white, white) !important;
 }
 .store:hover .storePro i.iconHover{
