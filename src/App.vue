@@ -54,26 +54,26 @@
       <div class="flex-container vfull" style="margin-top:40px;">
         <div class="flex-container vfull shadow padding30" style="width:750px;">
           <div style="width:280px;">
-            <img src="/static/img/new/img-new_1.png" width="280" height="205" alt="">
+            <img :src="hotNew.imageUrl" width="280" height="205" alt="">
           </div>
           <div class="marginl20 flex1" :class="!isInArray(browser_1,browserA) && 'flex-container-col'">
             <div :class="!isInArray(browser_1,browserA) ? 'text-limit2' : 'ellipsis ellipsis_1'" style="font-size:24px;">
-              <div><p><a href="/news/index.html">大商集团副总裁、天狗网总裁刘思军出任大商集团总裁大商集团副总裁、天狗网总裁刘思军出任大商集团总裁</a></p></div>
+              <div><p><a :href="'/news/index.html?id='+hotNew.id+'&cls=hotNews'">{{hotNew.title}}</a></p></div>
               <span class="ellipsis_1-after ellipsis-after" v-show="isInArray(browser_1,browserA)"> ... </span>
             </div>
-            <div class="fs-18 text-dark" :class="!isInArray(browser_1,browserA) ? 'text-limit3' : 'margint15 ellipsis ellipsis_2'" style="width:100%"><div><p>大商集团召开公司股东会，产生八届一次董事会监事会及高管。记者获悉，大商集团副总裁、天狗网总裁刘思军履新，出任大商集团总裁。大商集团召开公司股东会，产生八届一次董事会监事会及高管。记者获悉，大商集团副总裁、天狗网总裁刘思军履新，出任大商集团总裁。</p></div><span class="ellipsis_2-after ellipsis-after" v-show="!browser"> ... </span></div>
+            <div class="fs-18 text-dark" :class="!isInArray(browser_1,browserA) ? 'text-limit3' : 'margint15 ellipsis ellipsis_2'" style="width:100%"><div><p>{{hotNew.source}}</p></div><span class="ellipsis_2-after ellipsis-after" v-show="!browser"> ... </span></div>
 
             <div class="flex-container fs-16" :class="!isInArray(browser_1,browserA) ? 'margint20' : 'margint30'" style="width:100%">
-              <div class="text-dark">来源：联商快讯  2016/04/28</div>
-              <span><a href="" class="text-red">MORE</a></span>
+              <div class="text-dark">{{hotNew.date}}</div>
+              <span><a :href="'/news/index.html?id='+hotNew.id+'&cls=hotNews'" class="text-red">MORE</a></span>
             </div>
           </div>
         </div>
         <div class="flex1 paddingh30 paddingv25 shadow marginl30 flex-container-col vfull">
-          <div class="fs-18 flex-container center" v-for="item in [0,1,2,3,4]">
+          <div class="fs-18 flex-container center" v-for="(item,$index) in newsList">
             <div class="newsList pos-r paddingl20"  :class="!isInArray(browser_1,browserA) ? 'text-limit1' : 'ellipsis ellipsis_3'" style="width:100%">
               <div><p>
-                <a href="">中国连锁经营协会公布2016年度行业百强榜单中国连锁经营协会公布2016年度行业百强榜单</a>
+                <a :href="'/news/index.html?id='+$index+'&cls=newsList'">{{item.title}}</a>
               </p></div>
               <span class="ellipsis_3-after ellipsis-after" v-show="isInArray(browser_1,browserA)"> ... </span>
             </div>
@@ -109,6 +109,8 @@ import Vue from 'vue';
 
 import tgHead from './components/libs/head/index.js';
 import tgFoot from './components/libs/foot/index.js';
+
+// import tgNews from './asstes/news.json';
 
 export default {
   name: 'App',
@@ -219,7 +221,8 @@ export default {
       browser:true,
       browserA:'',
       browser_1:['FF','IE','Edge'],
-      browser_2:['IE','Edge']
+      browser_2:['IE','Edge'],
+      newsData:[]
       // browserA:['Opera','FF','Chrome','Safari','IE','Edge']
     }
   },
@@ -228,7 +231,17 @@ export default {
     window.setInterval(this.count,3000);
     this.browser = this.common.browserB();
     this.browserA = this.common.browserA();
-    console.log(this.browserA)
+    // this.newsData = this.common.newsData();
+  },
+  computed:{
+    hotNew:function(){
+      let data = this.common.newsData();
+      return data.hotNews[0]
+    },
+    newsList:function(){
+      let data = this.common.newsData();
+      return data.newsList
+    }
   },
   methods: {
     prChange(){

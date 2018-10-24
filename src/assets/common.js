@@ -1,5 +1,8 @@
-
+import tgNews from './news.json';
 export default{
+	newsData:function(){
+		return tgNews
+	},
     browserA:function(){
         var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串
 		var isOpera = userAgent.indexOf("Opera") > -1;
@@ -55,5 +58,8 @@ export default{
 		if (userAgent.indexOf("Trident") > -1) {
 		    return false
 		};
+    },
+    getUrlKey:function (name) {
+      return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.href) || [, ""])[1].replace(/\+/g, '%20')) || null
     }
 }
