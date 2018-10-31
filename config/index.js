@@ -49,6 +49,8 @@ module.exports = {
     store: path.resolve(__dirname, '../dist/store/index.html'),   //商家入驻
     about: path.resolve(__dirname, '../dist/store/about.html'),   //产品介绍
     news: path.resolve(__dirname, '../dist/news/index.html'),   //新闻详情
+    business: path.resolve(__dirname, '../dist/business/index.html'),   //经营证件
+    service: path.resolve(__dirname, '../dist/service/index.html'),   //配送方式
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',

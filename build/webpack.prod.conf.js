@@ -125,6 +125,36 @@ const webpackConfig = merge(baseWebpackConfig, {
       chunksSortMode: 'dependency',
       chunks: ['manifest', 'vendor', 'news']
     }),
+    //经营证件
+    new HtmlWebpackPlugin({
+      filename: process.env.NODE_ENV === 'testing'
+        ? '/business/index.html'
+        : config.build.business,
+      template: './tpl/business/index.html',
+      inject: true,
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true,
+        removeAttributeQuotes: true
+      },
+      chunksSortMode: 'dependency',
+      chunks: ['manifest', 'vendor', 'business']
+    }),
+    //配送方式
+    new HtmlWebpackPlugin({
+      filename: process.env.NODE_ENV === 'testing'
+        ? '/service/index.html'
+        : config.build.service,
+      template: './tpl/service/index.html',
+      inject: true,
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true,
+        removeAttributeQuotes: true
+      },
+      chunksSortMode: 'dependency',
+      chunks: ['manifest', 'vendor', 'service']
+    }),
     // keep module.id stable when vendor modules does not change
     new webpack.HashedModuleIdsPlugin(),
     // enable scope hoisting

@@ -1,7 +1,15 @@
 import tgNews from './news.json';
+import tgBusiness from './business.json';
+import tgService from './service.json';
 export default{
 	newsData:function(){
 		return tgNews
+	},
+	businessData:function(){
+		return tgBusiness
+	},
+	serviceData:function(){
+		return tgService
 	},
     browserA:function(){
         var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串

@@ -84,6 +84,20 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       inject: true,
       chunks:['news']
     }),
+    //经营证件
+    new HtmlWebpackPlugin({
+      filename: 'business/index.html',
+      template: 'tpl/business/index.html',
+      inject: true,
+      chunks:['business']
+    }),
+    //配送方式
+    new HtmlWebpackPlugin({
+      filename: 'service/index.html',
+      template: 'tpl/service/index.html',
+      inject: true,
+      chunks:['service']
+    }),
     // copy custom static assets
     new CopyWebpackPlugin([
       {

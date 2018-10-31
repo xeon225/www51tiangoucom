@@ -1,18 +1,18 @@
 <template>
-  <div id="about">
+  <div id="news">
     <!-- 头部导航 -->
     <div class="content">
       <tg-head :active="0"></tg-head>
     </div>
     <div class="bannerS flex-container">
       <div class="content flex-container-col hfull left">
-        <div style="font-size: 38px;">{{msg.enL}} <span class="text-red">{{msg.enR}}</span></div>
-        <div class="text-light" style="font-size: 24px;">{{msg.title}}</div>
+        <div style="font-size: 38px;">{{newsItem('enClassName')[0]}} <span class="text-red">{{newsItem('enClassName')[1]}}</span></div>
+        <div class="text-light" style="font-size: 24px;">{{newsItem('className')}}</div>
       </div>
     </div>
-    <div class="content paddingt40" style="padding-bottom:100px;">
+    <div class="content paddingt40" style="padding-bottom:100px;" v-show="newShow">
       <div class="border">
-        <div class="flex-container left fs-18 paddingh30 paddingv20" style="background: #EEEFF4">首页<i class="baseIcon-right marginh10"></i>天狗商务动态<i class="baseIcon-right marginh10"></i>{{newsItem('title')}}
+        <div class="flex-container left fs-18 paddingh30 paddingv20" style="background: #EEEFF4">首页<i class="baseIcon-right marginh10"></i>{{newsItem('className')}}<i class="baseIcon-right marginh10"></i>{{newsItem('title')}}
         </div>
         <div class="padding30">
           <div class="title text-dark pos-r paddingl25 margint10" style="font-size: 28px;"><strong>{{newsItem('title')}}</strong></div>
@@ -25,9 +25,12 @@
           </div>
         </div>
       </div>
-      
     </div>
-    
+    <div v-show="!newShow" class="text-center" style="margin:130px 0;">
+      <img src="/static/img/img-404.png" alt="">
+      <div class="margint50 fs-20">很抱歉，您所访问的页面从地球消失了…</div>
+      <div class="badge pill red big margint30" style="font-size: 30px;background: ##FF8A88;    padding: 21px 40px;"><a href="/index.html" class="text-white">返回首页</a></div>
+    </div>
 
 
 
@@ -43,14 +46,15 @@ import tgHead from '../../components/libs/head/index.js';
 import tgFoot from '../../components/libs/foot/index.js';
 
 export default {
-  name: 'About',
+  name: 'News',
   data () {
     return {
       msg: {
         enL:"TIANGOU",
         enR:"NEWS",
         title:"天狗商务动态"
-      }
+      },
+      newShow:false
     }
   },
   mounted() {
@@ -73,7 +77,16 @@ export default {
       let data = this.common.newsData();  //新闻数据
       let cls = this.common.getUrlKey('cls'); //取新闻类别
       let newsData = data[cls];
-      return newsData[id][name];
+      if (data[cls] && newsData[id]){
+        // console.log(newsData[id])
+        this.newShow = true;
+        return newsData[id][name];
+      } else {
+        this.newShow = false;
+        // console.log(2)
+        // return '1111'
+      }
+      // return newsData[id][name];
     }
   }
 }

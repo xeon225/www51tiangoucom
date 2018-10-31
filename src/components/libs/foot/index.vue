@@ -5,18 +5,19 @@
         <div class="flex-container left top">
           <div class="fs-14" style="margin-right:80px;">
             <div class="fs-18 text-white paddingb25">购物指南</div>
-            <div class="paddingv5"><a href="">购物流程</a></div>
-            <div class="paddingv5"><a href="">会员介绍</a></div>
-            <div class="paddingv5"><a href="">会员介绍</a></div>
-            <div class="paddingv5"><a href="">联系客服</a></div>
+            <div class="paddingv5"><a href="/news/index.html?id=0&cls=shopping">购物流程</a></div>
+            <div class="paddingv5"><a href="/news/index.html?id=1&cls=shopping">会员介绍</a></div>
+            <div class="paddingv5"><a href="/service/index.html?data=id_4&id=0">常见问题</a></div>
+            <div class="paddingv5"><a href="/news/index.html?id=2&cls=shopping">联系客服</a></div>
           </div>
           <div class="fs-14" style="margin-right:80px;">
             <div class="fs-18 text-white paddingb25">配送方式</div>
-            <div class="paddingv5"><a href="">极速达</a></div>
+            <div class="paddingv5" v-for="(item,$index) in serviceItem('id_1')"><a :href="'/service/index.html?data=id_1&id='+$index" v-text="item.name"></a></div>
+            <!-- <div class="paddingv5"><a href="">极速达</a></div>
             <div class="paddingv5"><a href="">超市服务台自提</a></div>
             <div class="paddingv5"><a href="">百货专柜物流配送</a></div>
             <div class="paddingv5"><a href="">百货专柜自提</a></div>
-            <div class="paddingv5"><a href="">海外配送</a></div>
+            <div class="paddingv5"><a href="">海外配送</a></div> -->
           </div>
           <div class="fs-14" style="margin-right:80px;">
             <div class="fs-18 text-white paddingb25">支付方式</div>
@@ -62,9 +63,12 @@
         </div>
       </div>
       <div class="fs-12 paddingb40 paddingt10" style="border-top: 1px solid #000000;color: #BFC3C6;">
-        <div><img src="/static/img/ba.png" width="12" alt=""> 辽公网安备 21020202000055号  |  辽ICP备13005630号-2  |  增值电信业务经营许可证： 辽B2-20140019</div>
-        <div>Copyright  ©  大连大商天狗电子商务有限公司版权所有<span class="marginh10">|</span><a href="">经营证照</a><span class="marginh10">|</span><a href="">营业执照</a><span class="marginh10">|</span><a href="">食品流通许可</a></div>
+        <div class="flex-container left"><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=21020202000055" target="blank"><img src="/static/img/ba.png" width="12" alt=""></a> <div class="flex1 marginl5">辽公网安备 21020202000055号  |  辽ICP备13005630号-2  |  增值电信业务经营许可证： 辽B2-20140019</div></div>
+        <div>Copyright  ©  大连大商天狗电子商务有限公司版权所有<span class="marginh10">|</span><a href="/business/index.html?id=1">经营证照</a><span class="marginh10">|</span><a @click="showImgUrl = !showImgUrl">营业执照</a><span class="marginh10">|</span><a @click="showImgUrl = !showImgUrl">食品流通许可</a></div>
         </div>
+      </div>
+      <div class="mask flex-container center" @click="showImgUrl = !showImgUrl" style="display:none" v-show="showImgUrl">
+        <img src="/static/img/business/0001.jpg" alt="">
       </div>
     </div>
   </div>
@@ -75,6 +79,16 @@ export default {
   name: 'foot',
   data () {
     return {
+      showImgUrl:false
+    }
+  },
+  methods: {
+    serviceItem(id){
+      let data = this.common.serviceData();  //证件数据
+      // let id = this.common.getUrlKey('id') || 1; //取新闻ID
+      // console.log(id)
+      // this.num = data['data_'+id].length;
+      return data[id];
     }
   }
 }
