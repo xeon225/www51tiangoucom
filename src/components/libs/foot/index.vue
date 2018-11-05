@@ -21,14 +21,16 @@
           </div>
           <div class="fs-14" style="margin-right:80px;">
             <div class="fs-18 text-white paddingb25">支付方式</div>
-            <div class="paddingv5"><a href="">支付流程</a></div>
+            <div class="paddingv5" v-for="(item,$index) in serviceItem('id_2')"><a :href="'/service/index.html?data=id_2&id='+$index" v-text="item.name"></a></div>
+<!--             <div class="paddingv5"><a href="">支付流程</a></div>
             <div class="paddingv5"><a href="">移动支付</a></div>
-            <div class="paddingv5"><a href="">异常情况</a></div>
+            <div class="paddingv5"><a href="">异常情况</a></div> -->
           </div>
           <div class="fs-14" style="margin-right:80px;">
             <div class="fs-18 text-white paddingb25">售后服务</div>
-            <div class="paddingv5"><a href="">门店&商户售后</a></div>
-            <div class="paddingv5"><a href="">天狗海外购售后</a></div>
+            <div class="paddingv5" v-for="(item,$index) in serviceItem('id_3')"><a :href="'/service/index.html?data=id_3&id='+$index" v-text="item.name"></a></div>
+<!--             <div class="paddingv5"><a href="">门店&商户售后</a></div>
+            <div class="paddingv5"><a href="">天狗海外购售后</a></div> -->
           </div>
         </div>
         <div style="border-left: 1px solid #5D5F63;" class="text-white paddingl30 fs-18">

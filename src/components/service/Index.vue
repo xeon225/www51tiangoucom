@@ -14,25 +14,36 @@
       <div class="serviceNav" style="width:250px;">
         <div class="bg-red text-white paddingl30 paddingv15 text-bolder" style="font-size: 24px">{{serviceItem().className}}</div>
         <div class="borderr borderl">
-          <div class="fs-18 borderb text-bolder serviceNavHover" :class="$index == id && 'current'" v-for="(item,$index) in navList"><a :href="'/service/index.html?data=id_1&id='+$index" v-text="item.name" class="dis-b paddingl30 paddingv20"></a></div>
+          <div class="fs-18 borderb text-bolder serviceNavHover" :class="$index == id && 'current'" v-for="(item,$index) in navList"><a :href="'/service/index.html?data='+classname+'&id='+$index" v-text="item.name" class="dis-b paddingl30 paddingv20"></a></div>
         </div>
       </div>
       <div class="flex1 border marginl30">
         <div class="paddingv20 paddingh30 fs-18 text-bolder text-darker" style="background: #EEEFF4;">
           首页<i class="baseIcon-right marginh10"></i>{{serviceItem().className}}<i class="baseIcon-right marginh10"></i>{{serviceItem().name}}
         </div>
-        <div class="padding30 fs-16" v-html="serviceItem().content">
-          <p><img src="/static/img/service/img-service_01.png" alt=""></p>
-                    <p class='text-darker margint20'>Q：顾客提交订单并完成付款后，多久能收到包裹？</p>
-          <p class='text-dark margint20'><span class='text-darker'>A：</span>保税仓：预计1～3个工作日左右发货，发货后预计5～7个工作日送达；</p><p class='text-dark' style="text-indent: 27px;">海外仓：实名认证无误后预计72小时内发货，发货后预计7～20个工作日送达。</p>
-          <p class='text-dark' style="text-indent: 27px;">工作日不包含周六、周日，法定节假日顺延；</p>
-<p class='text-dark' style="text-indent: 27px;">具体时效可至商品详情页查看预计送达时间；</p>
-<p class='text-dark' style="text-indent: 27px;">如遇双十一等大型活动期间、订单实名认证异常、海关严查等特殊情况，或遇台风、暴雨、大雾等不可抗力因素，订单送达时间将根据具体到达情况而定。
-</p>
-          <p class='text-darker margint40'>Q：什么是海外购的极速达慢比赔？</p>
-          <p class='text-dark margint20'><span class='text-darker'>A：</span>“极速达慢比赔”是顾客在天狗网海外购频道购买单品页面带有慢比赔标识的产品，在顾客下单并完成支付后，包裹未在5个工作日妥投（12:00前支付的订单从当天计起，12:00后支付的订单从第二个工作日计起，法定节假日顺延）的订单，顾客可申请20元现金券作为赔偿。</p>
-          <p class='text-dark margint10'>详情见：<a href='https://m.51tiangou.com/product/activityDetail.html?id=104750' target='blank'>https://m.51tiangou.com/product/activityDetail.html?id=104750</a></p>
-        </div>
+        <div class="padding30 fs-16" v-html="serviceItem().content"></div>
+        <!-- <div class="padding30">
+          <div class="flex-container borderl bordert text-center">
+            <div class="flex1 borderr padding10">退货类型</div>
+            <div class="flex2 borderr paddingv10 paddingh20">情况分类</div>
+            <div class="flex2 borderr paddingv10 paddingh20">补充说明</div>
+          </div>
+          <div class="flex-container vfull center borderl bordert">
+            <div class="flex1 borderr padding10 flex-container center">质量问题</div>
+            <div class="flex2 borderr paddingv10 paddingh20 flex-container">出具检测报告或经品牌方确认属于质量问题的证明文件原件。</div>
+            <div class="flex2 borderr paddingv10 paddingh20 flex-container">退货邮费；由天狗海购承担。</div>
+          </div>
+          <div class="flex-container vfull center borderl bordert">
+            <div class="flex1 borderr padding10 flex-container center">商品缺发溢漏损失</div>
+            <div class="flex2 borderr paddingv10 paddingh20 flex-container">商品在物流过程中形成了损坏、溢漏、破损等包括但不限于上述情况经售后核实属实。</div>
+            <div class="flex2 borderr paddingv10 paddingh20 flex-container">必须提供物图片信息以便售后保证处理时效，退货邮费；由天狗海购承担。</div>
+          </div>
+          <div class="flex-container vfull center borderl borderv">
+            <div class="flex1 borderr padding10 flex-container center">商品完好未拆封</div>
+            <div class="flex2 borderr paddingv10 paddingh20 flex-container">经客服确认，因用户个人原因产生的退货。</div>
+            <div class="flex2 borderr paddingv10 paddingh20 flex-container">必须提供物图片信息以便售后保证处理时效，退货邮费及商品产生的税费；由客户个人承担。</div>
+          </div>
+        </div> -->
       </div>
     </div>
 
@@ -57,6 +68,7 @@ export default {
         title:"配送方式"
       },
       navList:[],
+      classname:'id_1',
       id:0
     }
   },
@@ -66,11 +78,11 @@ export default {
   methods: {
     serviceItem(){
       let data = this.common.serviceData();
-      let classname = this.common.getUrlKey('data') || 'id_1';
+      this.classname = this.common.getUrlKey('data') || 'id_1';
       this.id = this.common.getUrlKey('id') || '0';
-      this.navList = data[classname]; 
-      // console.log(classname,id)
-      return data[classname][this.id];
+      this.navList = data[this.classname]; 
+      // console.log(this.classname,id)
+      return data[this.classname][this.id];
     },
     showImg(url){
       this.showImgUrl = true;
