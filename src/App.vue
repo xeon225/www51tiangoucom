@@ -359,6 +359,7 @@ export default {
 }
 .dataReport .iconReport i{
   background-image: linear-gradient(left top, #FFF8F8 0%, #FF4C48 100%);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#FFF8F8), to(#FF4C48));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color:#ff4c48;
@@ -368,11 +369,13 @@ export default {
   width:120px;
   height:120px;
   background-image: linear-gradient(-133deg, #FFB0A0 0%, #FF4C48 100%);
+  background-image: -webkit-gradient(linear, -133deg, from(#FFB0A0), to(#FF4C48));
   font-size:55px;
   transition: width 0.3s,height 0.3s,font-size 0.3s,background-image 0.3s;
 }
 .dataReport .iconReport.active i{
   background-image: linear-gradient(left top, #fff 0%, #fff 100%);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#fff), to(#fff));
   color:#fff;
 }
 
