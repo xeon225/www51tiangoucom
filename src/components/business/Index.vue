@@ -20,7 +20,7 @@
             <div class="fs-18">根据国家相关政策要求对经营者资质信息公示如下</div>
           </div>
           <div class="margint30 border clearfix fs-18">
-            <div class="box-span4 boxSpan borderr flex-container left paddingh30" style="min-height:64px;" @click="showImg(item.imgUrl)" :class="'border_'+num%3" v-for="item in businessItem()"><span>{{item.stroe}}</span><i class="baseIcon-right marginl10"></i></div>
+            <div class="box-span4 boxSpan borderr flex-container left paddingh30" style="height:64px;" @click="showImg(item.imgUrl)" :class="'border_'+num%3" v-for="item in businessItem()"><span>{{item.stroe}}</span><i class="baseIcon-right marginl10"></i></div>
           </div>
         </div>
       </div>

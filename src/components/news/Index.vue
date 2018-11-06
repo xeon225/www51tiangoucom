@@ -5,7 +5,7 @@
       <tg-head :active="0"></tg-head>
     </div>
     <div class="bannerS flex-container">
-      <div class="content flex-container-col hfull left">
+      <div class="content flex-container-col left">
         <div style="font-size: 38px;">{{newsItem('enClassName')[0]}} <span class="text-red">{{newsItem('enClassName')[1]}}</span></div>
         <div class="text-light" style="font-size: 24px;">{{newsItem('className')}}</div>
       </div>
