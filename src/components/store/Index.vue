@@ -8,8 +8,8 @@
       <div class="content paddingt50">
         <img src="/static/img/text-store_1.png" alt="" class="marginl50">
         <div class="marginl50 margint30 paddingb20">
-          <div class="btn round big white">马上申请</div>
-          <div class="btn round big reverse white marginl30">下载申请资料</div>
+          <div class="btn round big white"><a href="mailto:cooperate@51tiangou.com">马上申请</a></div>
+          <div class="btn round big reverse white marginl30"><a href="/static/xls/商家入驻表格.xlsx">下载申请资料</a></div>
         </div>
         <img src="/static/img/icon-store.png" alt="" class="marginl25 margint50">
       </div>
@@ -28,7 +28,7 @@
                 <div class="fs-18 marginl20 flex1">
                   <div class="btn store green">申请资格查询</div>
                   <div class="lh-32 margint20">
-                    <span style="color:#2AB795">企业：</span>合法登记的企业，满足入驻天狗的所有相关要求（<a href="" style="color:#2AB795">《入驻要求》</a>），不接受个体工商户入驻；
+                    <span style="color:#2AB795">企业：</span>合法登记的企业，满足入驻天狗的所有相关要求（<a href="/static/xls/商家入驻表格.xlsx" style="color:#2AB795">《入驻要求》</a>），不接受个体工商户入驻；
                   </div>
                 </div>
               </div>
@@ -200,16 +200,28 @@ export default {
     color:#5DC48E;
     padding: 23px 39px;
   }
-  .btn.round:hover{
-    background: none;
+  .btn.round a{
+    color:#5DC48E;
+  }
+  .btn.round:hover a{
     color:#fff;
-    border:1px solid #fff;
+  }
+  .btn.round:hover{
+    background:none;
+    border-color:#fff;
   }
   .btn.reverse{
     background: none;
+    border-color:#fff;
+  }
+  .btn.reverse a{
     color:#fff;
   }
+  .btn.reverse:hover a{
+    color:#5DC48E;
+  }
   .btn.reverse:hover{
+    border-color:#fff;
     background: #fff;
     color:#5DC48E;
   }
