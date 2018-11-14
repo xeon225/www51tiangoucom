@@ -27,11 +27,11 @@
               </div>
               <div class="text-center margint20">
                 <div class="paddingb5" style="font-size: 24px;" v-text="item.name"></div>
-                <div class="text-light fs-18 noHover" v-text="item.enName"></div>
+                <div class="text-light fs-18 noHover font-lighter" v-text="item.enName"></div>
               </div>
             </div>
           </div>
-          <div class="flex1 fs-18 text-dark paddingr30" v-text="item.content"></div>
+          <div class="flex1 fs-18 text-darker paddingr30 font-lighter" v-text="item.content"></div>
         </div>
       </div>
       
@@ -171,7 +171,7 @@ export default {
 .store:hover .storePro i.iconHover{
   color:#fff !important;
 }
-.store:hover .storePro .text-light,.store:hover .text-dark{
+.store:hover .storePro .text-light,.store:hover .text-darker{
   color:#fff !important;
 }
 .store:hover .storePro .storeAfter:after{

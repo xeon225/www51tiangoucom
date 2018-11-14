@@ -16,8 +16,8 @@
     </div>
     <!-- 产品介绍 -->
     <div class="content bg-white pos-r shadow" style="margin-top:-120px;">
-      <div class="flex-container">
-        <div class="flex1 storePro one" v-for="item in storeProOne">
+      <div class="flex-container" @mouseenter = "hover()">
+        <div class="flex1 storePro one" :class="$index == hoverNum && 'hover'" v-for="(item,$index) in storeProOne">
           <div class="flex-container center storeAfter pos-r">
             <div class="pos-r">
               <i :class="(isInArray(browser_2,browserA) && 'iconHover') +' '+ item.icon" :style="!isInArray(browser_2,browserA) ? item.color : item.colorIE"></i>
@@ -26,12 +26,12 @@
           </div>
           <div class="text-center">
             <div class="paddingb5" style="font-size: 24px;" v-text="item.name"></div>
-            <div class="text-light fs-18 noHover" v-html="item.enName"></div>
-            <div class="fs-18 hover paddingh20" v-text="item.content"></div>
+            <div class="text-light fs-18 noHover font-lighter" v-html="item.enName"></div>
+            <div class="fs-18 hover paddingh20 font-lighter" v-text="item.content"></div>
           </div>
         </div>
       </div>
-      <div class="flex-container">
+      <div class="flex-container" @mouseenter = "hover()">
         <div class="flex1 storePro" v-for="item in storeProTwo">
           <div class="flex-container center storeAfter pos-r">
             <div class="pos-r">
@@ -41,16 +41,16 @@
           </div>
           <div class="text-center">
             <div class="paddingb5" style="font-size: 24px;" v-text="item.name"></div>
-            <div class="text-light fs-18 noHover" v-html="item.enName"></div>
-            <div class="fs-18 hover paddingh20" v-text="item.content"></div>
+            <div class="text-light fs-18 noHover font-lighter" v-html="item.enName"></div>
+            <div class="fs-18 hover paddingh20 font-lighter" v-text="item.content"></div>
           </div>
         </div>
       </div>
     </div>
     <!-- 天狗商务动态 -->
     <div class="content" style="margin-top:60px;">
-      <div style="font-size: 38px;">天狗<span class="text-red">商务动态</span></div>
-      <div class="fs-18 text-light margint5">TIANGOU NEWS</div>
+      <div class="text-bolder" style="font-size: 38px;">天狗<span class="text-red">商务动态</span></div>
+      <div class="fs-18 text-light margint5 text-lighter">TIANGOU NEWS</div>
       <div class="flex-container vfull" style="margin-top:40px;">
         <div class="flex-container vfull shadow padding30" style="width:750px;">
           <div style="width:280px;">
@@ -58,7 +58,7 @@
           </div>
           <div class="marginl20 flex1" :class="!isInArray(browser_1,browserA) && 'flex-container-col'">
             <div :class="!isInArray(browser_1,browserA) ? 'text-limit2' : 'ellipsis ellipsis_1'" style="font-size:24px;">
-              <div><p><a :href="'/news/index.html?id='+hotNew.id+'&cls=hotNews'">{{hotNew.title}}</a></p></div>
+              <div class="titleHover"><p><a :href="'/news/index.html?id='+hotNew.id+'&cls=hotNews'">{{hotNew.title}}</a></p></div>
               <span class="ellipsis_1-after ellipsis-after" v-show="isInArray(browser_1,browserA)"> ... </span>
             </div>
             <div class="fs-18 text-dark" :class="!isInArray(browser_1,browserA) ? 'text-limit3' : 'margint15 ellipsis ellipsis_2'" style="width:100%"><div><p>{{hotNew.source}}</p></div><span class="ellipsis_2-after ellipsis-after" v-show="!browser"> ... </span></div>
@@ -222,7 +222,8 @@ export default {
       browserA:'',
       browser_1:['FF','IE','Edge'],
       browser_2:['IE','Edge'],
-      newsData:[]
+      newsData:[],
+      hoverNum:3
       // browserA:['Opera','FF','Chrome','Safari','IE','Edge']
     }
   },
@@ -265,6 +266,9 @@ export default {
         }
       }
       return false;
+    },
+    hover(){
+      this.hoverNum = 99;
     }
   }
 }
@@ -281,7 +285,7 @@ export default {
 .storePro .hover{
   display:none;
 }
-.storePro:hover{
+.storePro:hover,.storePro.hover{
   background-image: linear-gradient(-47deg, #FF4C48 0%, #FFB0A0 100%);
   color:#fff;
   border-radius:6px;
@@ -290,7 +294,7 @@ export default {
 .storePro.one{
   margin-bottom:-30px;
 }
-.storePro.one:hover{
+.storePro.one:hover,.storePro.one.hover{
   margin-bottom:0px;
   margin-top:-30px;
 }
@@ -300,27 +304,28 @@ export default {
   -webkit-text-fill-color: transparent;
   line-height: 65px;
 }
-.storePro:hover .noHover{
+.storePro:hover .noHover,.storePro.hover .noHover{
   display:none;
 }
-.storePro:hover .hover{
+.storePro:hover .hover,.storePro.hover .hover{
   display:block;
 }
-.storePro:hover i{
+.storePro:hover i,.storePro.hover i{
+  font-size:48px;
   background-image: -webkit-linear-gradient(left top , white, white) !important;
 }
-.storePro:hover i.iconHover{
+.storePro:hover i.iconHover,.storePro.hover i.iconHover{
   color:#fff !important;
 }
-.storePro:hover .storeAfter:after{
+.storePro:hover .storeAfter:after,.storePro.hover .storeAfter:after{
   background:#fff;
 }
-.storePro .storeAfter:after{
+.storePro .storeAfter:after,.storePro.hover .storeAfter:after{
   content:'';
   position: absolute;
   left:50%;
   margin-left:-10px;
-  bottom:20px;
+  bottom:24px;
   width:20px;
   height:3px;
   background:#ebebeb;
@@ -378,5 +383,7 @@ export default {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#fff), to(#fff));
   color:#fff;
 }
-
+.titleHover{
+  color:#ff4c48;
+}
 </style>

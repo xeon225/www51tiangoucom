@@ -12,11 +12,11 @@
     </div>
     <div class="content paddingt40" style="padding-bottom:100px;" v-show="newShow">
       <div class="border">
-        <div class="flex-container left fs-18 paddingh30 paddingv20" style="background: #EEEFF4">首页<i class="baseIcon-right marginh10"></i>{{newsItem('className')}}<i class="baseIcon-right marginh10"></i>{{newsItem('title')}}
+        <div class="flex-container left fs-18 paddingh30 paddingv20" style="background: #EEEFF4"><a href="/index.html">首页</a><i class="baseIcon-right marginh10"></i>{{newsItem('className')}}<i class="baseIcon-right marginh10"></i><strong>{{newsItem('title')}}</strong>
         </div>
         <div class="padding30">
           <div class="title text-dark pos-r paddingl25 margint10" style="font-size: 28px;"><strong>{{newsItem('title')}}</strong></div>
-          <div class="fs-18 text-light" style="margin-top: 60px;">{{newsItem('date')}}</div>
+          <div class="fs-18 text-light font-lighter" style="margin-top: 60px;">{{newsItem('date')}}</div>
           <div class="bordert margint30 paddingt30 paddingb10">
             <div style="line-height: 22px;" v-html="newsItem('content')">
             </div>
@@ -26,8 +26,8 @@
     </div>
     <div v-show="!newShow" class="text-center" style="margin:130px 0;">
       <img src="/static/img/img-404.png" alt="">
-      <div class="margint50 fs-20">很抱歉，您所访问的页面从地球消失了…</div>
-      <div class="badge pill red big margint30" style="font-size: 30px;background: ##FF8A88;    padding: 21px 40px;"><a href="/index.html" class="text-white">返回首页</a></div>
+      <div class="margint50 fs-20 text-light">很抱歉，您所访问的页面从地球消失了…</div>
+      <div class="badge pill red big margint30" style="font-size: 30px;background: #FF8A88;padding: 21px 40px;box-shadow: 0 5px 25px 0 rgba(255,138,136,0.25);"><a href="/index.html" class="text-white">返回首页</a></div>
     </div>
 
 
@@ -77,12 +77,16 @@ export default {
       let newsData = data[cls];
       if (data[cls] && newsData[id]){
         // console.log(newsData[id])
+        console.log(1)
         this.newShow = true;
         return newsData[id][name];
       } else {
         this.newShow = false;
-        // console.log(2)
-        // return '1111'
+        let data = {
+          enClassName:['TIANGOU','NEWS'],
+          className:"天狗商务动态"
+        }
+        return data[name]
       }
       // return newsData[id][name];
     }

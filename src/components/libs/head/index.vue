@@ -1,7 +1,7 @@
 <template>
   <div class="head flex-container">
     <div class="logo flex-container">
-      <div class="paddingr15 borderr"><img src="/static/img/logo.png" alt="" width="104"></div>
+      <div class="paddingr15 borderr"><a href="/index.html"><img src="/static/img/logo.png" alt="" width="104"></a></div>
       <span class="fs-18 marginl15">企业官网</span>
     </div>
     <div class="nav flex-container fs-18">
@@ -28,7 +28,7 @@
               </div>
             </div>
           </div>
-          <span class="margint25">手机扫描快速下载</span>
+          <span class="margint25"><img src="/static/img/title-appDown.png" height="24" alt=""></span>
         </div>
         <div class="pos-a right0" style="top:-60px;cursor: pointer;" @click="prShowFn(false)"><i class="baseIcon-roundclose text-white" style="font-size:40px;"></i></div>
       </div>
