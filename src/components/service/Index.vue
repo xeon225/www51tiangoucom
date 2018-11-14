@@ -19,7 +19,7 @@
       </div>
       <div class="flex1 border marginl30">
         <div class="paddingv20 paddingh30 fs-18 text-darker" style="background: #EEEFF4;">
-          <a href="/index.html">首页</a><i class="baseIcon-right marginh10"></i>{{serviceItem().className}}<i class="baseIcon-right marginh10"></i><strong>{{serviceItem().name}}</strong>
+          <a href="/index.html">首页</a><i class="baseIcon-right marginh10"></i><a :href="'/service/index.html?data='+classname+'&id=0'">{{serviceItem().className}}</a><i class="baseIcon-right marginh10"></i><strong>{{serviceItem().name}}</strong>
         </div>
         <div class="padding30 fs-16" v-html="serviceItem().content"></div>
         <!-- <div class="padding30">
