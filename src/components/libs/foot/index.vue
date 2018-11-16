@@ -66,7 +66,7 @@
       </div>
       <div class="fs-12 paddingb40 paddingt10" style="border-top: 1px solid #000000;color: #BFC3C6;">
         <div class="flex-container left"><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=21020202000055" target="blank"><img src="/static/img/ba.png" width="12" alt=""></a> <div class="flex1 marginl5">辽公网安备 21020202000055号  |  辽ICP备13005630号-2  |  增值电信业务经营许可证： 辽B2-20140019</div></div>
-        <div>Copyright  ©  大连大商天狗电子商务有限公司版权所有<span class="marginh10">|</span><a href="/business/index.html?id=1">经营证照</a><span class="marginh10">|</span><a @click="showImgUrl = !showImgUrl">营业执照</a><span class="marginh10">|</span><a @click="showImgUrl = !showImgUrl">食品流通许可</a></div>
+        <div>Copyright  ©  大连大商天狗电子商务有限公司版权所有<span class="marginh10">|</span><a href="/business/index.html?id=1">经营证照</a><span class="marginh10">|</span><a @click="showImgUrl = !showImgUrl">营业执照</a><span class="marginh10">|</span><a @click="showImgUrl = !showImgUrl">食品流通许可</a><span class="marginh10">|</span><a href="/consumption/index.html">保健食品消费提示</a></div>
         </div>
       </div>
       <div class="mask flex-container center" @click="showImgUrl = !showImgUrl" style="display:none" v-show="showImgUrl">

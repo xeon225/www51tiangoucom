@@ -12,7 +12,7 @@
     </div>
     <div class="content paddingt40">
       <div class="flex-container left fs-18 paddingh30 paddingv20" style="background: #EEEFF4">
-        首页<i class="baseIcon-right marginh10"></i>产品介绍
+        <a href="/index.html">首页</a><i class="baseIcon-right marginh10"></i><strong>产品介绍</strong>
       </div>
     </div>
     

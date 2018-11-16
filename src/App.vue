@@ -85,8 +85,8 @@
     <!-- 天狗2017大数据 -->
     <div class="dataReport" style="padding-bottom:75px;">
       <div class="content">
-        <div style="font-size: 38px;">天狗2017<span class="text-red">大数据</span></div>
-        <div class="fs-18 text-light margint5">TIANGOU DATA ANNUAL REPORT</div>
+        <div class="text-bolder" style="font-size: 38px;">天狗2017<span class="text-red">大数据</span></div>
+        <div class="fs-18 text-light margint5 text-lighter">TIANGOU DATA ANNUAL REPORT</div>
         <div class="flex-container text-center margint50">
           <div class="flex1" v-for="(item,$index) in iconReportData">
             <div class="flex-container center bottom" style="height:120px;">

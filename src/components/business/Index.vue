@@ -12,7 +12,7 @@
     </div>
     <div class="content paddingt40" style="padding-bottom:100px;">
       <div class="border">
-        <div class="flex-container left fs-18 paddingh30 paddingv20" style="background: #EEEFF4">首页<i class="baseIcon-right marginh10"></i>经营证件
+        <div class="flex-container left fs-18 paddingh30 paddingv20" style="background: #EEEFF4"><a href="/index.html">首页</a><i class="baseIcon-right marginh10"></i><strong>经营证件</strong>
         </div>
         <div class="padding40">
           <div class="text-center">

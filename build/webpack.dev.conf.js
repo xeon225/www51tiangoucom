@@ -98,6 +98,13 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       inject: true,
       chunks:['service']
     }),
+    //消费提示
+    new HtmlWebpackPlugin({
+      filename: 'consumption/index.html',
+      template: 'tpl/consumption/index.html',
+      inject: true,
+      chunks:['consumption']
+    }),
     // copy custom static assets
     new CopyWebpackPlugin([
       {

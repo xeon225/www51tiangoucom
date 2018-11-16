@@ -27,7 +27,8 @@ module.exports = {
     about:'./src/js/store/about.js', //产品介绍
     news:'./src/js/news/index.js', //新闻详情
     business:'./src/js/business/index.js', //经营证件
-    service:'./src/js/service/index.js' //配送方式
+    service:'./src/js/service/index.js', //配送方式
+    consumption:'./src/js/consumption/index.js' //消费提示
   },
   output: {
     path: config.build.assetsRoot,
