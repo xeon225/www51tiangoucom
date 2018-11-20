@@ -17,7 +17,7 @@
         <div class="padding30">
           <div class="title text-dark pos-r paddingl25 margint10" style="font-size: 28px;"><strong>{{newsItem('title')}}</strong></div>
           <div class="fs-18 text-light font-lighter" style="margin-top: 60px;">{{newsItem('date')}}</div>
-          <div class="bordert margint30 paddingt30 paddingb10 strong">
+          <div class="bordert margint30 paddingt30 paddingb10 strong text-dark">
             <div style="line-height: 22px;" v-html="newsItem('content')">
             </div>
           </div>

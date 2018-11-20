@@ -54,12 +54,12 @@
           <div class="margint20">关注天狗网</div>
           <div class="flex-container left top fs-14 margint10" style="color: #BFC3C6;">
             <div class="marginr50">
-              <div class="fs-14">天狗网APP</div>
-              <img src="/static/img/pr-iphone.png" width="70" height="70" alt="" class="margint5">
+              <div class="fs-14 text-center">天狗网APP</div>
+              <img src="/static/img/pr-App.png" width="100" height="100" alt="" class="margint5">
             </div>
             <div>
-              <div class="fs-14">天狗网微信</div>
-              <img src="/static/img/pr-WeChat.png" width="70" height="70" alt="" class="margint5">
+              <div class="fs-14 text-center">天狗网微信</div>
+              <img src="/static/img/pr-WeChat.png" width="100" height="100" alt="" class="margint5">
             </div>
           </div>
         </div>

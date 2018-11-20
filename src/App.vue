@@ -132,7 +132,7 @@ export default {
           enName:"Counters cashier",
           color:"background-image: -webkit-linear-gradient(left top , rgb(255, 255, 255) 0%, #26A8FF 90%);",
           colorIE:"color:#26A8FF",
-          content:"取代专柜开票，顾客款台排队结算的模式。通过天狗网完成交易支付并提货，购物方面又快捷。"
+          content:"取代专柜开票，顾客款台排队结算的模式。通过天狗网完成交易支付并提货，购物方便又快捷。"
         },
         {
           name:"云货架",

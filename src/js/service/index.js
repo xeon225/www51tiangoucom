@@ -2,7 +2,7 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import Service from '../../components/service/Index.vue'
-import '../../css/cmui.css'
+// import '../../css/cmui.css'
 
 
 
