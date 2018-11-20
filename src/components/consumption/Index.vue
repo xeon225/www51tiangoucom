@@ -12,9 +12,9 @@
     </div>
     <div class="content paddingt40" style="padding-bottom:100px;">
       <div class="border">
-        <div class="flex-container left fs-18 paddingh30 paddingv20" style="background: #EEEFF4"><a href="/index.html">首页</a><i class="baseIcon-right marginh10"></i><strong>消费提示</strong>
+        <div class="flex-container left fs-18 paddingh30 paddingv20" style="background: #EEEFF4"><a href="/index.html">首页</a><i class="baseIcon-right marginh10"></i><strong>保健食品消费提示</strong>
         </div>
-        <div class="fs-16 paddingh30 paddingv40">
+        <div class="fs-16 paddingh30 paddingv40 strong">
           <div class="text-center text-bolder">
             <div style="font-size:36px">关于防范食品、保健食品<br>
 欺诈和虚假宣传行为的消费提示</div>

@@ -6472,3 +6472,6 @@ a, .active {
 
 .font-lighter {
   font-weight: 300; }
+
+.strong .text-bolder, .strong strong {
+  color: #333; }
