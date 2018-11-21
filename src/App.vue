@@ -187,7 +187,7 @@ export default {
       ],
       iconReportData:[
         {
-          name:"69,054,688",
+          name:"70000万+",
           pi:"UV",
           icon:"baseIcon-icon_10",
           content:"全年平台访问总额"
@@ -199,19 +199,19 @@ export default {
           content:"注册天狗会员数"
         },
         {
-          name:"5987584",
+          name:"600万+",
           pi:"人",
           icon:"baseIcon-icon_9",
           content:"全年交易人数"
         },
         {
-          name:"12.2亿",
+          name:"超10亿",
           pi:"元",
           icon:"baseIcon-icon_6",
           content:"天狗移动支付交易额"
         },
         {
-          name:"12.1亿",
+          name:"超10亿",
           pi:"元",
           icon:"baseIcon-icon_4",
           content:"精准营销增量交易额"

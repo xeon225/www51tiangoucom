@@ -50,7 +50,7 @@
                 <div class="fs-18 marginl20 flex1">
                   <div class="btn store green">注册并提交入驻资料</div>
                   <div class="lh-32 margint20">
-                    登录官网注册；<br>选择经营的类目/品牌；<br>上传新品牌提报资料表及资质；<br>提交审核；
+                    登录官网注册；<br>选择经营的类目；<br>上传新品牌提报资料表及资质；<br>提交审核；
                   </div>
                 </div>
               </div>
@@ -68,7 +68,7 @@
                   <div class="btn store green">审核资质有效性和是否符合入驻要求</div>
               </div>
               <div class="flex-container right top fs-18 margint30">
-                  <div class="btn store green">审核通过：返回商户激活账号信息</div>
+                  <div class="btn store green">审核通过：进入下一流程，提交纸质版资料</div>
               </div>
               <div class="flex-container right top fs-18 margint30">
                   <div class="btn store green">审核未通过：如因缺少相关文件可修改后重新提交</div>

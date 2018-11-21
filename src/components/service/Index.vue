@@ -22,6 +22,7 @@
           <a href="/index.html">首页</a><i class="baseIcon-right marginh10"></i><a :href="'/service/index.html?data='+classname+'&id=0'">{{serviceItem().className}}</a><i class="baseIcon-right marginh10"></i><strong>{{serviceItem().name}}</strong>
         </div>
         <div class="padding30 fs-16 strong text-dark" v-html="serviceItem().content"></div>
+        
         <!-- <div class="padding30">
           <div class="flex-container borderl bordert text-center">
             <div class="flex1 borderr padding10">退货类型</div>
