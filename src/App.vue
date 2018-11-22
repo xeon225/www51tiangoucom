@@ -205,7 +205,7 @@ export default {
           content:"全年交易人数"
         },
         {
-          name:"超10亿",
+          name:"超80亿",
           pi:"元",
           icon:"baseIcon-icon_6",
           content:"天狗移动支付交易额"

@@ -77,7 +77,6 @@ export default {
       let newsData = data[cls];
       if (data[cls] && newsData[id]){
         // console.log(newsData[id])
-        console.log(1)
         this.newShow = true;
         return newsData[id][name];
       } else {
