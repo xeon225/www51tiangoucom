@@ -70,7 +70,7 @@
           </div>
         </div>
         <div class="flex1 paddingh30 paddingv25 shadow marginl30 flex-container-col vfull">
-          <div class="fs-18 flex-container center" v-for="(item,$index) in newsList">
+          <div class="fs-18 flex-container center" v-for="(item,$index) in newsList.slice(0,5)">
             <div class="newsList pos-r paddingl20"  :class="!isInArray(browser_1,browserA) ? 'text-limit1' : 'ellipsis ellipsis_3'" style="width:100%">
               <div><p>
                 <a :href="'/news/index.html?id='+$index+'&cls=newsList'">{{item.title}}</a>

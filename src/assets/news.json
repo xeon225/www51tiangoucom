@@ -4,19 +4,29 @@
 		{
 			"id":0,
 			"imageUrl":"/static/img/new/img-news_default.png",
-			"className":"天狗商务动态",
+			"className":"天狗动态",
+			"enClassName":["TIANGOU","NEWS"],
+			"title":"大商集团首家无人店在瑞诗酒店开业",
+			"source":"刷脸进场、离场扣款，不用排队……大商集团首家无人店正式亮相大连瑞诗酒店一楼大堂。店铺面积约100㎡，经营的上百种知名品牌商品。",
+			"date":"2018/11/03",
+			"content":"<div class='text-center'><img src='/static/img/new/img-new_2_1.jpg' width='60%' alt='' /></div><div class='margint20'>   12月5日，大商集团首个无人店在大连瑞诗酒店正式启幕，扫码进场、离场扣款，不用排队……无人店占地面积约100㎡，根据大数据精准采样分析，综合设定商品品类与SKU，涵盖酒饮、休闲食品、日用、个护等多个品类，上百种知名品牌，全方面满足酒店顾客高质量、快速服务而又充满选择乐趣的需求。</div><div class='text-center'><img src='/static/img/new/img-new_2_2.jpg' alt='' width='60%' class='margint20' /></div><div class='margint20'>   大商集团无人店与银联商务股份有限公司合作，采用Amazon Go为代表的图像识别技术，围绕人物自动识别、商品自动识别、无感知结账，实现“即拿即走”的快速购物体验。<br>大商集团一直持续跟踪行业技术创新与应用，努力实践行业发展新概念。无人店作为零售新业态，大商集团会继续挖掘适合其运营的场景，创造丰富的购物体验机会。不仅于此，即将推出的大商美食1号，坐落青泥洼商圈，会让消费者获得更美好、更前沿的新零售服务，让我们一起期待！</div><div class='text-center'><img src='/static/img/new/img-new_2_3.jpg' alt='' width='60%' class='margint20' /></div>"
+		}
+	],
+	"newsList":[
+		{
+			"id":99,
+			"imageUrl":"/static/img/new/img-news_default.png",
+			"className":"天狗动态",
 			"enClassName":["TIANGOU","NEWS"],
 			"title":"大商集团创造中国企业500强 第65位新业绩",
 			"source":"领跑实体商业，再创历史佳绩。大商集团创造，中国企业500强，第65位新业绩。位于中国百货业第一位，辽宁省第一位，东北民企第一位。",
 			"date":"2017/09/14",
 			"content":"<div class='text-center'><img src='/static/img/new/img-news_default.png' alt=''></div><div class='text-center'><img src='/static/img/new/img-news_hot_1.jpg' alt=''></div><div class='margint20'>到大商酒行，品世界好酒，高级法国红酒节，限量三款。</div><div>红酒不宜网购，喝好酒请到酒窖来。</div><div class='text-center'><div class='margint20'>拉彤城堡</div><img src='/static/img/new/img-news_hot_2.jpg' alt='' class='margint20'></div><div class='margint20'>源于波尔多核心产区多年蝉联国际大奖<br>拉彤城堡酒庄位于梅多克中心地带，距离著名的拉菲庄园仅7分钟的路程，始建于1607年，43公顷的葡萄园盛产赤霞珠、美乐和马尔贝克等顶级葡萄。从种植、收获到酿造、贮藏，一切程序都遵循法国传统工艺，陈酿15个月以上。老拉彤城堡酒屡次斩获国际大奖。</div><div class='text-center'><div class='margint20'>拉戈城堡</div><img src='/static/img/new/img-news_hot_3.jpg' alt='' class='margint20'></div><div class='margint20'>拿破仑家族百年传承<br>法国红酒的典范之作<br>拉戈城堡距今已有300多年历史，位于波尔多东南的法定产区“第一波尔多山谷”。原庄主——蒙特贝罗公爵路易•拿破仑•拉纳，其父及其拿破仑家族多位将军的名字被刻在凯旋门上。拉纳元帅与拿破仑一样，钟情于红酒，将葡萄园LEZONGARS修缮扩建，聘请当时波尔多著名的酿酒大师皮埃尔•卡佐，一起酿造纯粹地道的酒庄酒，一直流传至今。著名的拉戈城堡陈酿干红葡萄酒系列一直以强劲浑厚的风格著称。</div><div class='margint20'>金奖酒品 限量发售，贮藏经典 逐年升值。</div><div class='text-center'><div class='margint20'>老拉彤城堡干红葡萄酒2012</div><img src='/static/img/new/img-news_hot_4.jpg' alt='' class='margint20'></div><div class='margint20'>              2014年法国阿基坦大区葡萄酒挑战赛金奖，深宝石红色闪耀夺目，浓郁奶香配合黑加仑气息。<br>   适合搭配小羊排或牛排。</div><div class='margint20'>老拉彤城堡干红葡萄酒2012+<br>巴纳城堡干红葡萄酒2013+<br>精美双支礼盒<br>原价：1583元<br>尊享价：1383元</div><div class='text-center'><div class='margint20'>老拉彤城堡干红葡萄酒2014</div><img src='/static/img/new/img-news_hot_5.jpg' alt='' class='margint20'></div><div>              2016年布鲁塞尔国际葡萄酒大赛金奖。独特的辛烈香气和浓郁的黑色浆果尽显品味优雅。<br>   适合搭配烤肉类食物。</div><div class='margint20'>老拉彤城堡干红葡萄酒2014+巴纳城堡干红葡萄酒2013+精美双支礼盒<br>原价：1583元<br>尊享价：1383元</div><div class='text-center'><div class='margint20'>拉戈城堡陈酿干红葡萄酒2013</div><img src='/static/img/new/img-news_hot_6.jpg' alt='' class='margint20'></div><div class='margint20'>              优雅与强劲、细致与浓厚以巧妙的姿态结合在一起。多层次的芳香，带有成熟黑加仑子，辛辣的香草味和紫罗兰香气。回甘悠扬。<br>   可搭配炖肉、烤鸡。</div><div class='margint20'>拉戈城堡陈酿干红葡萄酒2013+巴纳城堡干红葡萄酒2013+精美双支礼盒<br>原价：983元<br>尊享价：783元</div><div class='margint50 text-right'>数量有限，购完即止。</div>"
-		}
-	],
-	"newsList":[
+		},
 		{
 			"id":0,
 			"title":"2018中国民营企业500强榜单发布 大商集团排名第10位",
-			"className":"天狗商务动态",
+			"className":"天狗动态",
 			"enClassName":["TIANGOU","NEWS"],
 			"source":"",
 			"date":"2018/08/30",
@@ -25,7 +35,7 @@
 		{
 			"id":1,
 			"title":"天狗网&兰蔻首次战略合作完美收官",
-			"className":"天狗商务动态",
+			"className":"天狗动态",
 			"enClassName":["TIANGOU","NEWS"],
 			"source":"",
 			"date":"2018/09/01",
@@ -34,7 +44,7 @@
 		{
 			"id":2,
 			"title":"线上线下齐发力  打造智能数字化超市",
-			"className":"天狗商务动态",
+			"className":"天狗动态",
 			"enClassName":["TIANGOU","NEWS"],
 			"source":"",
 			"date":"2018/9/13",
@@ -43,7 +53,7 @@
 		{
 			"id":3,
 			"title":"深耕线下 赋能实体——天狗O2O",
-			"className":"天狗商务动态",
+			"className":"天狗动态",
 			"enClassName":["TIANGOU","NEWS"],
 			"source":"",
 			"date":"2018/09/13",
@@ -52,7 +62,7 @@
 		{
 			"id":4,
 			"title":"天狗网官方直营品牌ISDG启动品牌全新战略，人气偶像关晓彤成为其新的代言人",
-			"className":"天狗商务动态",
+			"className":"天狗动态",
 			"enClassName":["TIANGOU","NEWS"],
 			"source":"",
 			"date":"2018/10/16",
