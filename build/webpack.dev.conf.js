@@ -105,6 +105,13 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       inject: true,
       chunks:['consumption']
     }),
+    //新闻列表
+    new HtmlWebpackPlugin({
+      filename: 'news/list.html',
+      template: 'tpl/news/list.html',
+      inject: true,
+      chunks:['list']
+    }),
     // copy custom static assets
     new CopyWebpackPlugin([
       {

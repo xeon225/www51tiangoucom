@@ -1,5 +1,5 @@
 <template>
-  <div id="news">
+  <div id="list">
     <!-- 头部导航 -->
     <div class="content">
       <tg-head :active="0"></tg-head>
@@ -10,21 +10,22 @@
         <div class="text-light" style="font-size: 24px;">{{newsItem('className')}}</div>
       </div>
     </div>
-    <div class="content paddingt40" style="padding-bottom:100px;" v-show="newShow">
+    <div class="content paddingt40" style="padding-bottom:100px;" v-show="listShow.length > 0">
       <div class="border">
         <div class="flex-container left fs-18 paddingh30 paddingv20" style="background: #EEEFF4"><a href="/index.html">首页</a><i class="baseIcon-right marginh10"></i>{{newsItem('className')}}<i class="baseIcon-right marginh10"></i><strong>{{newsItem('title')}}</strong>
         </div>
         <div class="padding30">
-          <div class="title text-dark pos-r paddingl25 margint10" style="font-size: 28px;"><strong>{{newsItem('title')}}</strong></div>
-          <div class="fs-18 text-light font-lighter" style="margin-top: 60px;">{{newsItem('date')}}</div>
-          <div class="bordert margint30 paddingt30 paddingb10 strong text-dark">
-            <div style="line-height: 22px;" v-html="newsItem('content')">
-            </div>
+          <div v-for="item in listShow.slice(currentPage * pageShowNum,(currentPage+1) * pageShowNum)" v-text="item.title"></div>
+
+          
+          <div class="margint50">
+            {{currentPage * pageShowNum}} +++ {{(currentPage+1) * pageShowNum}}
+            <span class="padding20" v-for="($index,item) in pageNum" v-text="item+1" @click="currentPage = item"></span>
           </div>
         </div>
       </div>
     </div>
-    <div v-show="!newShow" class="text-center" style="margin:130px 0;">
+    <div v-show="listShow.length === 0" class="text-center" style="margin:130px 0;">
       <img src="/static/img/img-404.png" alt="">
       <div class="margint50 fs-20 text-light">很抱歉，您所访问的页面从地球消失了…</div>
       <div class="badge pill red big margint30" style="font-size: 30px;background: #FF8A88;padding: 21px 40px;box-shadow: 0 5px 25px 0 rgba(255,138,136,0.25);"><a href="/index.html" class="text-white">返回首页</a></div>
@@ -44,7 +45,7 @@ import tgHead from '../../components/libs/head/index.js';
 import tgFoot from '../../components/libs/foot/index.js';
 
 export default {
-  name: 'News',
+  name: 'List',
   data () {
     return {
       msg: {
@@ -52,7 +53,9 @@ export default {
         enR:"NEWS",
         title:"天狗动态"
       },
-      newShow:false
+      newShow:false,
+      pageShowNum:3,
+      currentPage:0,
     }
   },
   mounted() {
@@ -88,6 +91,19 @@ export default {
         return data[name]
       }
       // return newsData[id][name];
+    }
+  },
+  computed:{
+    listShow(){
+      // console.log(Array.from({length:6}, (v,k) => k+1))
+      return this.common.newsData().temp
+    },
+    pageNum(){
+      let that = this;
+      let n = that.listShow.length;
+      let p = that.pageShowNum;
+      console.log(Array.from({length:Math.ceil(n/p)}, (v,k) => k))
+      return Array.from({length:Math.ceil(n/p)}, (v,k) => k)
     }
   }
 }
