@@ -15,13 +15,15 @@
         <div class="flex-container left fs-18 paddingh30 paddingv20" style="background: #EEEFF4"><a href="/index.html">首页</a><i class="baseIcon-right marginh10"></i>{{newsItem('className')}}<i class="baseIcon-right marginh10"></i><strong>{{newsItem('title')}}</strong>
         </div>
         <div class="padding30">
-          <div v-for="item in listShow.slice(currentPage * pageShowNum,(currentPage+1) * pageShowNum)" v-text="item.title"></div>
+          <div v-for="item in listShow.slice((currentPage-1) * pageShowNum,currentPage * pageShowNum)" v-text="item.title"></div>
+        </div>
 
-          
-          <div class="margint50">
-            {{currentPage * pageShowNum}} +++ {{(currentPage+1) * pageShowNum}}
-            <span class="padding20" v-for="($index,item) in pageNum" v-text="item+1" @click="currentPage = item"></span>
-          </div>
+
+
+
+
+        <div class="padding30">
+          <tg-pagination v-on:sendData='getSonText' :pageSum="pageSum" :pageNum="pageShowNum"></tg-pagination>
         </div>
       </div>
     </div>
@@ -43,6 +45,7 @@ import Vue from 'vue';
 
 import tgHead from '../../components/libs/head/index.js';
 import tgFoot from '../../components/libs/foot/index.js';
+import tgPagination from '../../components/libs/pagination/index.js';
 
 export default {
   name: 'List',
@@ -55,7 +58,7 @@ export default {
       },
       newShow:false,
       pageShowNum:3,
-      currentPage:0,
+      currentPage:1
     }
   },
   mounted() {
@@ -91,19 +94,17 @@ export default {
         return data[name]
       }
       // return newsData[id][name];
+    },
+    getSonText (n) {
+      this.currentPage = n
     }
   },
   computed:{
-    listShow(){
-      // console.log(Array.from({length:6}, (v,k) => k+1))
-      return this.common.newsData().temp
+    pageSum(){   //新闻总数
+      return this.common.newsData().temp.length
     },
-    pageNum(){
-      let that = this;
-      let n = that.listShow.length;
-      let p = that.pageShowNum;
-      console.log(Array.from({length:Math.ceil(n/p)}, (v,k) => k))
-      return Array.from({length:Math.ceil(n/p)}, (v,k) => k)
+    listShow(){   //新闻数据
+      return this.common.newsData().temp
     }
   }
 }
