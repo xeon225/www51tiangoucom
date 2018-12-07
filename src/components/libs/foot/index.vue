@@ -100,6 +100,7 @@ export default {
 <style scoped>
 .foot{
   background: #2A2B30;
+  min-width: 1280px;
 }
 .foot a{
   color: #BFC3C6;

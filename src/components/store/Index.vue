@@ -57,6 +57,9 @@
             </div>           
           </div>
           <div class="iconLine after pos-a top0 bottom0">
+            <div class="radiusSix pos-r" v-show="false">
+              
+            </div>
             <img src="/static/img/icon-line_1.png" alt="">
           </div>
         </div>
@@ -257,5 +260,39 @@ export default {
     border-radius:50px;
     font-size:22px;
     padding: 6px 24px;
+  }
+  .radiusSix{
+    width:120px;
+    height:70px;
+    border-radius:7px;
+    background: rgba(214,241,235,1);
+    position: absolute;
+    margin-top:33px;
+  }
+  .radiusSix:before{
+    content: '';
+    width:120px;
+    height:70px;
+    border-radius:7px;
+    background: rgba(214,241,235,1);
+    position: absolute;
+    transform:rotate(60deg);
+    -ms-transform:rotate(60deg);   /* IE 9 */
+    -moz-transform:rotate(60deg);  /* Firefox */
+    -webkit-transform:rotate(60deg); /* Safari 和 Chrome */
+    -o-transform:rotate(60deg);  /* Opera */
+  }
+  .radiusSix:after{
+    content: '';
+    width:120px;
+    height:70px;
+    border-radius:7px;
+    background: rgba(214,241,235,1);
+    position: absolute;
+    transform:rotate(60deg);
+    -ms-transform:rotate(60deg);   /* IE 9 */
+    -moz-transform:rotate(60deg);  /* Firefox */
+    -webkit-transform:rotate(-60deg); /* Safari 和 Chrome */
+    -o-transform:rotate(60deg);  /* Opera */
   }
 </style>
