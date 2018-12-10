@@ -11,7 +11,7 @@
       </div>
     </div>
     <div class="content paddingt40" style="padding-bottom:100px;" v-show="listShow.length > 0">
-      <div class="border">
+      <div class="">
         <div class="flex-container left fs-18 paddingh30 paddingv20" style="background: #EEEFF4"><a href="/index.html">首页</a><i class="baseIcon-right marginh10"></i>{{newsItem('className')}}
         </div>
         <div class="padding30">
@@ -22,7 +22,7 @@
               </div>
               <span class="ellipsis_3-after ellipsis-after" style="display: none;"> ... </span>
             </div>
-            <div v-text="item.date"></div>
+            <div v-text="item.date.replace(/\//g, '-')" style="min-width: 100px;"></div>
           </div>
         </div>
 
@@ -105,10 +105,10 @@ export default {
   },
   computed:{
     pageSum(){   //新闻总数
-      return this.common.newsData().temp.length
+      return this.common.newsData().newsList.length
     },
     listShow(){   //新闻数据
-      return this.common.newsData().temp
+      return this.common.newsData().newsList
     }
   }
 }

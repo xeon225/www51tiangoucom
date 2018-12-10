@@ -1,7 +1,9 @@
 <template>
-  <div class="pagination">  
-    <div>
-      <span class="btn marginr20" v-for="item in page" v-text="item" @click="sendData(item)"></span>
+  <div class="pagination" v-show="page.length > 1">
+    <div class="flex-container center" style="font-size:24px;">
+      <span class="baseIcon baseIcon-pullleft marginr30" style="font-size:24px;"></span>
+      <span class="pageBtn marginh10" :class="item === currentPage && 'current'" v-for="item in page" v-text="item" @click="sendData(item)"></span>
+      <span class="baseIcon baseIcon-pullright marginl30" style="font-size:24px;"></span>
     </div>
   </div>
 </template>
@@ -26,6 +28,7 @@ export default {
   },
   methods: {
     sendData (n) {
+      this.currentPage = n;
       this.$emit('sendData', n)
     }
   },
@@ -42,8 +45,26 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
-
+.pageBtn{
+  width:30px;
+  height:30px;
+  border-radius:50%;
+  background: #fff;
+  text-align:center;
+  color:#666;
+  font-size:14px;
+  line-height: 30px;
+}
+.pageBtn.current{
+  width:30px;
+  height:30px;
+  border-radius:50%;
+  background: #ff4c48;
+  text-align:center;
+  color:#fff;
+  font-size:14px;
+  line-height: 30px;
+}
 
 
 </style>
