@@ -12,7 +12,7 @@
     </div>
     <div class="content paddingt40" style="padding-bottom:100px;" v-show="newShow">
       <div class="border">
-        <div class="flex-container left fs-18 paddingh30 paddingv20" style="background: #EEEFF4"><a href="/index.html">首页</a><i class="baseIcon-right marginh10"></i>{{newsItem('className')}}<i class="baseIcon-right marginh10"></i><strong>{{newsItem('title')}}</strong>
+        <div class="flex-container left fs-18 paddingh30 paddingv20" style="background: #EEEFF4"><a href="/index.html">首页</a><i class="baseIcon-right marginh10"></i><a href="/news/list.html">{{newsItem('className')}}</a><i class="baseIcon-right marginh10"></i><strong>{{newsItem('title')}}</strong>
         </div>
         <div class="padding30">
           <div class="title text-dark pos-r paddingl25 margint10" style="font-size: 28px;"><strong>{{newsItem('title')}}</strong></div>

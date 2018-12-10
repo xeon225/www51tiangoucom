@@ -1,9 +1,9 @@
 <template>
   <div class="pagination" v-show="page.length > 1">
     <div class="flex-container center" style="font-size:24px;">
-      <span class="baseIcon baseIcon-pullleft marginr30" style="font-size:24px;"></span>
+      <span class="baseIcon page baseIcon-page_left marginr30" style="font-size:24px;" :class="currentPage > 1 && 'current'" @click="currentPage > 1 && sendData(currentPage-1)"></span>
       <span class="pageBtn marginh10" :class="item === currentPage && 'current'" v-for="item in page" v-text="item" @click="sendData(item)"></span>
-      <span class="baseIcon baseIcon-pullright marginl30" style="font-size:24px;"></span>
+      <span class="baseIcon page baseIcon-page_right marginl30" style="font-size:24px;" :class="currentPage < page.length && 'current'" @click="currentPage < page.length && sendData(currentPage+1)"></span>
     </div>
   </div>
 </template>
@@ -65,6 +65,10 @@ export default {
   font-size:14px;
   line-height: 30px;
 }
-
-
+.baseIcon.page{
+  color:#ebebeb;
+}
+.baseIcon.current{
+  color:#ccc;
+}
 </style>
