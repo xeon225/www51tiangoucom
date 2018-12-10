@@ -12,15 +12,19 @@
     </div>
     <div class="content paddingt40" style="padding-bottom:100px;" v-show="listShow.length > 0">
       <div class="border">
-        <div class="flex-container left fs-18 paddingh30 paddingv20" style="background: #EEEFF4"><a href="/index.html">首页</a><i class="baseIcon-right marginh10"></i>{{newsItem('className')}}<i class="baseIcon-right marginh10"></i><strong>{{newsItem('title')}}</strong>
+        <div class="flex-container left fs-18 paddingh30 paddingv20" style="background: #EEEFF4"><a href="/index.html">首页</a><i class="baseIcon-right marginh10"></i>{{newsItem('className')}}
         </div>
         <div class="padding30">
-          <div v-for="item in listShow.slice((currentPage-1) * pageShowNum,currentPage * pageShowNum)" v-text="item.title"></div>
+          <div class="fs-18 flex-container center paddingv10 newsHover" v-for="(item,$index) in listShow.slice((currentPage-1) * pageShowNum,currentPage * pageShowNum)">
+            <div class="newsList pos-r paddingl20 text-limit1" style="width: 100%;">
+              <div>
+                <p><a :href="'/news/index.html?id='+$index+'&amp;cls=newsList'" v-text="item.title"></a></p>
+              </div>
+              <span class="ellipsis_3-after ellipsis-after" style="display: none;"> ... </span>
+            </div>
+            <div v-text="item.date"></div>
+          </div>
         </div>
-
-
-
-
 
         <div class="padding30">
           <tg-pagination v-on:sendData='getSonText' :pageSum="pageSum" :pageNum="pageShowNum"></tg-pagination>
@@ -57,7 +61,7 @@ export default {
         title:"天狗动态"
       },
       newShow:false,
-      pageShowNum:3,
+      pageShowNum:20,
       currentPage:1
     }
   },
@@ -112,16 +116,22 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.title{
-  line-height: 36px;
-}
-.title:before{
+.newsList:after{
   content:'';
-  position: absolute;
-  width:8px;
-  height: 36px;
-  background: #ff4c48;
+  position:absolute;
+  width:10px;
+  height:10px;
+  background:#666;
   left:0;
-  top:0;
+  top:7px;
+}
+.newsHover .newsList:hover:after{
+  background:#ff4c48;
+}
+.newsHover:hover a{
+  color:#ff4c48;
+}
+.newsHover:hover{
+  color:#ff4c48;
 }
 </style>

@@ -65,7 +65,7 @@
 
             <div class="flex-container fs-16" :class="!isInArray(browser_1,browserA) ? 'margint20' : 'margint30'" style="width:100%">
               <div class="text-dark">{{hotNew.date}}</div>
-              <span><a :href="'/news/index.html?id='+hotNew.id+'&cls=hotNews'" class="text-red">MORE</a></span>
+              <span><a href="/news/list.html" class="text-red">MORE</a></span>
             </div>
           </div>
         </div>
@@ -237,11 +237,21 @@ export default {
   computed:{
     hotNew:function(){
       let data = this.common.newsData();
-      return data.hotNews[0]
+      let d = data.newsList.filter((item)=>{
+        if(item.hot === 1){
+         return item
+       }
+      });
+      return d[0]
     },
     newsList:function(){
       let data = this.common.newsData();
-      return data.newsList
+      let d = data.newsList.filter((item)=>{
+        if(item.hot === 0){
+         return item
+       }
+      });
+      return d
     }
   },
   methods: {
