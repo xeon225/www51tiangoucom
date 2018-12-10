@@ -174,7 +174,7 @@ const webpackConfig = merge(baseWebpackConfig, {
     new HtmlWebpackPlugin({
       filename: process.env.NODE_ENV === 'testing'
         ? '/news/list.html'
-        : config.build.consumption,
+        : config.build.list,
       template: './tpl/news/list.html',
       inject: true,
       minify: {
