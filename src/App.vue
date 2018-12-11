@@ -61,7 +61,7 @@
               <div class="titleHover"><p><a :href="'/news/index.html?id='+hotNew.id+'&cls=hotNews'">{{hotNew.title}}</a></p></div>
               <span class="ellipsis_1-after ellipsis-after" v-show="isInArray(browser_1,browserA)"> ... </span>
             </div>
-            <div class="fs-18 text-dark" :class="!isInArray(browser_1,browserA) ? 'text-limit3' : 'margint15 ellipsis ellipsis_2'" style="width:100%"><div><p>{{hotNew.source}}</p></div><span class="ellipsis_2-after ellipsis-after" v-show="!browser"> ... </span></div>
+            <div class="fs-18 text-dark" :class="!isInArray(browser_1,browserA) ? 'text-limit3' : 'margint15 ellipsis ellipsis_2'" style="width:100%"><div><p>{{hotNew.message}}</p></div><span class="ellipsis_2-after ellipsis-after" v-show="!browser"> ... </span></div>
 
             <div class="flex-container fs-16" :class="!isInArray(browser_1,browserA) ? 'margint20' : 'margint30'" style="width:100%">
               <div class="text-dark">{{hotNew.date}}</div>
