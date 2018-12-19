@@ -49,7 +49,7 @@
     </div>
     <!-- 天狗商务动态 -->
     <div class="content" style="margin-top:60px;">
-      <div class="text-bolder" style="font-size: 38px;">天狗<span class="text-red">商务动态</span></div>
+      <div class="text-bolder" style="font-size: 38px;">天狗<span class="text-red">动态</span></div>
       <div class="fs-18 text-light margint5 text-lighter">TIANGOU NEWS</div>
       <div class="flex-container vfull" style="margin-top:40px;">
         <div class="flex-container vfull shadow padding30" style="width:750px;">
