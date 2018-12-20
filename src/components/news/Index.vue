@@ -18,8 +18,8 @@
           <div class="title text-dark pos-r paddingl25 margint10" style="font-size: 28px;"><strong>{{newsItem('title')}}</strong></div>
           <div class="fs-18 text-dark" style="margin-top: 30px;height:25px;line-height: 25px;">{{newsItem('source')}}</div>
           <div class="fs-18 text-light font-lighter" style="margin-top: 10px;">{{newsItem('date')}}</div>
-          <div class="bordert margint30 paddingt30 paddingb10 strong text-dark">
-            <div style="line-height: 22px;" v-html="newsItem('content')">
+          <div class="bordert margint30 paddingt30 paddingb10 strong text-dark flex-container center">
+            <div class="lh-22" :style="newClass === 'newsList' && 'width: 980px;'" v-html="newsItem('content')">
             </div>
           </div>
         </div>
@@ -53,7 +53,8 @@ export default {
         enR:"NEWS",
         title:"天狗动态"
       },
-      newShow:false
+      newShow:false,
+      newClass:''
     }
   },
   mounted() {
@@ -75,6 +76,7 @@ export default {
       let id = this.common.getUrlKey('id'); //取新闻ID
       let data = this.common.newsData();  //新闻数据
       let cls = this.common.getUrlKey('cls'); //取新闻类别
+      this.newClass = (cls === 'newsList' && cls);
       let newsData = data[cls];
       if (data[cls] && newsData[id]){
         // console.log(newsData[id])
@@ -107,5 +109,8 @@ export default {
   background: #ff4c48;
   left:0;
   top:0;
+}
+.lh-22{
+  line-height: 22px;
 }
 </style>
