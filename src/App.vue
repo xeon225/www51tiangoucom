@@ -85,7 +85,7 @@
     <!-- 天狗2017大数据 -->
     <div class="dataReport" style="padding-bottom:75px;">
       <div class="content">
-        <div class="text-bolder" style="font-size: 38px;">天狗2017<span class="text-red">大数据</span></div>
+        <div class="text-bolder" style="font-size: 38px;">天狗2018<span class="text-red">大数据</span></div>
         <div class="fs-18 text-light margint5 text-lighter">TIANGOU DATA ANNUAL REPORT</div>
         <div class="flex-container text-center margint50">
           <div class="flex1" v-for="(item,$index) in iconReportData">
@@ -187,25 +187,25 @@ export default {
       ],
       iconReportData:[
         {
-          name:"70000万+",
+          name:"75000万+",
           pi:"UV",
           icon:"baseIcon-icon_10",
           content:"全年平台访问总额"
         },
         {
-          name:"1000万+",
+          name:"1200万+",
           pi:"人",
           icon:"baseIcon-icon_1",
           content:"注册天狗会员数"
         },
         {
-          name:"600万+",
+          name:"660万+",
           pi:"人",
           icon:"baseIcon-icon_9",
           content:"全年交易人数"
         },
         {
-          name:"超80亿",
+          name:"112亿",
           pi:"元",
           icon:"baseIcon-icon_6",
           content:"天狗移动支付交易额"
