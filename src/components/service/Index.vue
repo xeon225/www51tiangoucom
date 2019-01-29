@@ -22,29 +22,18 @@
           <a href="/index.html">首页</a><i class="baseIcon-right marginh10"></i><a :href="'/service/index.html?data='+classname+'&id=0'">{{serviceItem().className}}</a><i class="baseIcon-right marginh10"></i><strong>{{serviceItem().name}}</strong>
         </div>
         <div class="padding30 fs-16 strong text-dark" v-html="serviceItem().content"></div>
-        
-        <!-- <div class="padding30">
-          <div class="flex-container borderl bordert text-center">
-            <div class="flex1 borderr padding10">退货类型</div>
-            <div class="flex2 borderr paddingv10 paddingh20">情况分类</div>
-            <div class="flex2 borderr paddingv10 paddingh20">补充说明</div>
-          </div>
-          <div class="flex-container vfull center borderl bordert">
-            <div class="flex1 borderr padding10 flex-container center">质量问题</div>
-            <div class="flex2 borderr paddingv10 paddingh20 flex-container">出具检测报告或经品牌方确认属于质量问题的证明文件原件。</div>
-            <div class="flex2 borderr paddingv10 paddingh20 flex-container">退货邮费；由天狗海购承担。</div>
-          </div>
-          <div class="flex-container vfull center borderl bordert">
-            <div class="flex1 borderr padding10 flex-container center">商品缺发溢漏损失</div>
-            <div class="flex2 borderr paddingv10 paddingh20 flex-container">商品在物流过程中形成了损坏、溢漏、破损等包括但不限于上述情况经售后核实属实。</div>
-            <div class="flex2 borderr paddingv10 paddingh20 flex-container">必须提供物图片信息以便售后保证处理时效，退货邮费；由天狗海购承担。</div>
-          </div>
-          <div class="flex-container vfull center borderl borderv">
-            <div class="flex1 borderr padding10 flex-container center">商品完好未拆封</div>
-            <div class="flex2 borderr paddingv10 paddingh20 flex-container">经客服确认，因用户个人原因产生的退货。</div>
-            <div class="flex2 borderr paddingv10 paddingh20 flex-container">必须提供物图片信息以便售后保证处理时效，退货邮费及商品产生的税费；由客户个人承担。</div>
-          </div>
+<!--         <div class="padding30 fs-16 strong text-dark">
+          <p class='fs-16 margint10 text-darker text-bolder'>客服电话</p>
+          <p class='margint10 text-darker' style='font-size: 30px;'>400-650-8988</p>
+          <p class='margint10 fs-16'>服务时间：周一至周日 9:00-21:00（节假日9:00-18:00）</p>
+          <p class='fs-16 margint30 text-bolder text-darker'>客服邮箱</p>
+          <p class='fs-16 margint10'>51tiangouservice@tiangou.com</p>
+          <p class='fs-16 margint30 text-bolder text-darker'>在线客服</p>
+          <p class='fs-16 margint10'><span class='text-darker'>A: </span>APP端右下角我的-客服中心-在线客服；</p>
+          <p class='fs-16 margint10'><span class='text-darker'>B: </span>微信关注“大商天狗网”公众号-左下角点击键盘输入问题即可快速联系客服；</p>
+          <p class="margint20"><img src="/static/img/new/img-message_01.png" width="250"></p>
         </div> -->
+
       </div>
     </div>
 

@@ -108,5 +108,13 @@
 			"name":"订单支付",
 			"content":"<p class='text-darker margint20'><strong>Q：天狗网有哪些支付方式？</strong></p><p class='text-dark margint20'><span class='text-darker text-bolder'>A：</span>1、线上购物线上结款可用“微信支付”“支付宝支付”<br>2、线上下单线下付款时时，结款可用多种方式。</p>"
 		}
+	],
+	"id_5":[
+		{
+			"className":"购物指南",
+			"enClassName":["SHOPPING","GUIDE"],
+			"name":"联系客服",
+			"content":"<p class='fs-16 margint10 text-darker text-bolder'>客服电话</p><p class='margint10 text-darker' style='font-size: 30px;'>400-650-8988</p><p class='margint10 fs-16'>服务时间：周一至周日 9:00-21:00（节假日9:00-18:00）</p><p class='fs-16 margint30 text-bolder text-darker'>客服邮箱</p><p class='fs-16 margint10'>51tiangouservice@tiangou.com</p><p class='fs-16 margint30 text-bolder text-darker'>在线客服</p><p class='fs-16 margint10'><span class='text-darker marginr10'>A:</span>APP端右下角我的-客服中心-在线客服；</p><p class='fs-16 margint10'><span class='text-darker marginr10'>B:</span>微信关注“大商天狗网”公众号-左下角点击键盘输入问题即可快速联系客服；</p><p class='margint20'><img src='/static/img/new/img-message_01.png' width='250'></p>"
+		}
 	]
 }

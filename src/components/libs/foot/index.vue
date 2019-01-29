@@ -8,7 +8,7 @@
             <div class="paddingv5"><a href="/news/index.html?id=0&cls=shopping">购物流程</a></div>
             <div class="paddingv5"><a href="/news/index.html?id=1&cls=shopping">会员介绍</a></div>
             <div class="paddingv5"><a href="/service/index.html?data=id_4&id=0">常见问题</a></div>
-            <div class="paddingv5"><a href="/news/index.html?id=2&cls=shopping">联系客服</a></div>
+            <div class="paddingv5"><a href="/service/index.html?data=id_5&id=0">联系客服</a></div>
           </div>
           <div class="fs-14" style="margin-right:80px;">
             <div class="fs-18 text-white paddingb25">配送方式</div>
