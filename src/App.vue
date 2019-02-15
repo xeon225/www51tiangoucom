@@ -58,7 +58,7 @@
           </div>
           <div class="marginl20 flex1" :class="!isInArray(browser_1,browserA) && 'flex-container-col'">
             <div :class="!isInArray(browser_1,browserA) ? 'text-limit2' : 'ellipsis ellipsis_1'" style="font-size:24px;">
-              <div class="titleHover"><p><a :href="'/news/index.html?id='+hotNew.id+'&cls=hotNews'">{{hotNew.title}}</a></p></div>
+              <div class="titleHover"><p><a :href="'/news/index.html?id='+hotId+'&cls=newsList'">{{hotNew.title}}</a></p></div>
               <span class="ellipsis_1-after ellipsis-after" v-show="isInArray(browser_1,browserA)"> ... </span>
             </div>
             <div class="fs-18 text-dark" :class="!isInArray(browser_1,browserA) ? 'text-limit3' : 'margint15 ellipsis ellipsis_2'" style="width:100%"><div><p>{{hotNew.message}}</p></div><span class="ellipsis_2-after ellipsis-after" v-show="!browser"> ... </span></div>
@@ -243,6 +243,15 @@ export default {
        }
       });
       return d[0]
+    },
+    hotId:function(){
+      let data = this.common.newsData();
+      var i = data.newsList.length;
+      while (i--) {
+        if (data.newsList[i].hot === 1) {
+          return i
+        }
+      }
     },
     newsList:function(){
       let data = this.common.newsData();
