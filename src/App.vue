@@ -57,7 +57,7 @@
             <img :src="hotNew.imageUrl" width="280" height="205" alt="">
           </div>
           <div class="marginl20 flex1" :class="!isInArray(browser_1,browserA) && 'flex-container-col'">
-            <div :class="!isInArray(browser_1,browserA) ? 'text-limit2' : 'ellipsis ellipsis_1'" style="font-size:24px;">
+            <div :class="!isInArray(browser_1,browserA) ? 'text-limit2' : 'ellipsis ellipsis_1'" style="font-size:24px;width: 100%;">
               <div class="titleHover"><p><a :href="'/news/index.html?id='+hotId+'&cls=newsList'">{{hotNew.title}}</a></p></div>
               <span class="ellipsis_1-after ellipsis-after" v-show="isInArray(browser_1,browserA)"> ... </span>
             </div>
