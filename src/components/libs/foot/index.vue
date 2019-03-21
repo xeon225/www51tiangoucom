@@ -52,7 +52,7 @@
                 <div class="flex-container left bottom"><span class="color_1 fs-14" style="line-height: 18px;">电话：</span><div style="font-size: 24px;" class="lh-1">400-650-8988</div></div>
                 <!-- <div>( 9:00-21:00 )</div> -->
               </div>
-              <div class="color_1 margint10 lh-20">邮箱：51tiangouservice@tiangou.com</div>
+              <div class="color_1 margint10 lh-20">邮箱：tiangouservice@51tiangou.com</div>
               <div class="color_1 margint10 lh-20">服务时间：周一至周日 9:00-21:00（节假日 9:00-18:00）</div>
               <div class="margint30 fs-18" style="line-height: 22px;">招商合作</div>
               <div class="flex-container left color_1 margint20 lh-20">
