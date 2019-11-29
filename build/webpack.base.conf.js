@@ -29,7 +29,8 @@ module.exports = {
     business:'./src/js/business/index.js', //经营证件
     service:'./src/js/service/index.js', //配送方式
     consumption:'./src/js/consumption/index.js', //消费提示
-    list:'./src/js/news/list.js' //新闻列表
+    list:'./src/js/news/list.js', //新闻列表
+    contact:'./src/js/store/contact.js' //关于我们
     
   },
   output: {

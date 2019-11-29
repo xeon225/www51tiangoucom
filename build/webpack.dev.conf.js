@@ -112,6 +112,13 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       inject: true,
       chunks:['list']
     }),
+    //关于我们
+    new HtmlWebpackPlugin({
+      filename: 'store/contact.html',
+      template: 'tpl/store/contact.html',
+      inject: true,
+      chunks:['contact']
+    }),
     // copy custom static assets
     new CopyWebpackPlugin([
       {

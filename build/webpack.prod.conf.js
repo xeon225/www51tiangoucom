@@ -185,6 +185,21 @@ const webpackConfig = merge(baseWebpackConfig, {
       chunksSortMode: 'dependency',
       chunks: ['manifest', 'vendor', 'list']
     }),
+    //关于我们
+    new HtmlWebpackPlugin({
+      filename: process.env.NODE_ENV === 'testing'
+        ? '/store/contact.html'
+        : config.build.index,
+      template: './tpl/store/contact.html',
+      inject: true,
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true,
+        removeAttributeQuotes: true
+      },
+      chunksSortMode: 'dependency',
+      chunks: ['manifest', 'vendor', 'contact']
+    }),
     // keep module.id stable when vendor modules does not change
     new webpack.HashedModuleIdsPlugin(),
     // enable scope hoisting

@@ -2,21 +2,48 @@
 	"title":"news",
 	"newsList":[
 		{
-			"hot":1,
+			"hot":0,
 			"id":0,
-			"imageUrl":"/static/img/new/img-news_default.png",
+			"className":"天狗动态",
+			"enClassName":["TIANGOU","NEWS"],
+			"title":"发现频道大变身",
+			"source":"大商集团报",
+			"date":"2019/10/18",
+			"content":"<div class='text-center'><img src='/static/img/new/img-news_13_1.png' alt=''></div><p class='fs-16 margint30'>轻轻的我来了，是的，这一次我们又来到了新的起点。</p><p class='fs-16 margint20'>从为你带来“门店新鲜事”的第一天开始，发现频道已经陪着你走过了1000个日日夜夜。从发现门店新鲜事的海量分享，到城市维度的瀑布流信息展现，我们一直在迭代，于是“好物圈”应运而生。</p><p class='fs-16 margint20'>我们致力于为你打造一个基于社交关系的好物推荐视频圈，带你探索一种离你品质生活更近的真实体验。</p><p class='fs-16 margint30 text-bolder'>达人推荐</p><p class='fs-16 margint30'>达人推荐根据目前“好物圈”内的互动指数，每日为你推荐4-8名活跃的达人、超级卖手。在这里你既可以围观他们的主页，观看他们发布的小视频，了解他们的动态；还可以和你喜好相匹配的达人建立长期互动关系，打开首页就能直观呈现，一目了然。</p><p class='margint40 text-center'><img src='/static/img/new/img-news_13_2.png' alt=''></p><p class='fs-16 margint30 text-bolder'>专题风尚</p><p class='fs-16 margint30'>专题风尚是“好物圈”运营小组独家策划的专题聚合圈子。</p><p class='fs-16'>在这里我们将门店的爆款商品，结合娱乐热点独立策划设计成为视频专题，如“国货巡演”、“现男友美妆攻略”。在这里，你既可以网罗天下八卦，又可以种草当下爆款好物，所有单品放心购买，正品保证哦~</p><div class='text-center margint10'><img src='/static/img/new/img-news_13_3.png' alt=''></div><p class='fs-16 margint30 text-bolder'>好物圈</p><p class='fs-16 margint30'>好物圈导航部分由频道八个热门圈子组成，定时推出福利活动，让你边看边买，福利到家。好物志、种草说、评测社为官方运营圈子，好物圈运营小组会定期搜罗大商全国门店的优质视频定制成内容专题。美妆馆、美衣馆等子版块让每个走进好物圈的粉丝能快速定位自己的喜好，从而在对应圈子内看到精品视频。</p><div class='text-center margint10'><img src='/static/img/new/img-news_13_4.png' alt=''></div><p class='fs-16 margint30 text-bolder'>互动推荐区</p><p class='fs-16 margint30'>互动推荐区由“精选推荐”、“同城推荐”、“我的关注”三个子标签组成。新改版的互动专区中，“精选推荐”的维度为全国；“同城推荐”保留仅观看同城内的所有好物圈内容；“我的关注”为仅查看粉丝关注列表下的相关好物圈内容。</p>"
+		},
+		{
+			"hot":0,
+			"id":0,
+			"className":"天狗动态",
+			"enClassName":["TIANGOU","NEWS"],
+			"title":"天狗“扫码购”小程序上线 体验升级，逛超市免排队！",
+			"source":"大商集团报",
+			"date":"2019/08/30",
+			"content":"<div class='text-center'><img src='/static/img/new/img-news_12_1.png' alt='' width='880'></div><p class='fs-16 margint30'>8月19日起，逛大商集团旗下部分超市，即可感受小程序带来的便捷服务。新功能整合了小程序与微信支付，用户可不必在收银台排长队结账，逛超市随看随取，边扫边买，解锁逛店新姿势！</p><p class='margint40'><img src='/static/img/new/img-news_12_title_1.png' alt=''></p><p class='fs-16 margint30'>在微信环境下新增加的扫码购小程序。用户在逛超市的过程中，打开微信扫一扫，扫描超市标识的指定二维码，即可进入小程序。小程序承载扫码商品、加入购物车、结算等功能，搭配自助核销机，可自主完成商品选购。</p><p class='margint40'><img src='/static/img/new/img-news_12_title_2.png' alt=''></p><p class='fs-16 margint30'>逛超市最郁闷之处就在于排队结账，尤其节假日或者超市大活动时，队伍排到怀疑人生也是常有的经历。不过扫码购小程序就可以解决这一困扰。其便利之处在于打破了之前用户只能在收银台结算的固定状态，可以任由用户在货架选购商品时，随时拿手机扫货架上的二维码，手机变成了“扫码枪”。通过天狗扫码购小程序，可以实现现场扫描超市商品条码，加入线上购物车，完成支付后即可离店。</p><p class='margint40'><img src='/static/img/new/img-news_12_title_3.png' alt=''></p><p class='fs-16 margint30'>扫码购功能在下载天狗APP或者登录大商天狗网微信找寻菜单入口的基础上，新增了扫一扫指定二维码或者调取微信小程序的方式体验。小到几块钱的口香糖，大到几百块钱的红酒，都可以用“扫码购”边扫边买，还能接收相关商品的推荐，甚至商品的单品优惠券将来都会实现实时推送，方便购物的同时，优惠不再错过。</p><div class='text-center margint10'><img src='/static/img/new/img-news_12_2.png' alt=''></div><p class='margint40'><img src='/static/img/new/img-news_12_title_4.png' alt=''></p><p class='fs-16 margint30 text-black'>为了配合扫码购小程序上线，天狗网还同步推出了限时满减活动，不仅在8月31日有满30元立减3元的优惠，8月27日-11月24日，还有专享超市活动。（参与店铺详见店内通知）<br>参与方式如下：</p><p class='fs-16 margint20 text-black'>活动一：</p><p class='fs-16 margint20'>一、活动时间：8月31日当天</p><p class='fs-16 margint20'>二、活动规则：活动期间，使用微信小程序“天狗扫码购”功能，在超市消费满30元立减3元 ，限量10万名，先到先得。</p><p class='fs-16 margint20'>注：每位用户每周限享受一次立减优惠；同一微信账号、同一银行账号、同一身份证、同一手机号、同一设备、同一订单，满足任一条件均视为同一用户；参与活动订单若发生退款，优惠金额将等比例退回。</p><p class='fs-16 margint20 text-black'>活动二：</p><p class='fs-16 margint20'>一、活动时间：8月27日-11月24日</p><p class='fs-16 margint20'>二、参与店铺：仅限大连地区超市（大商鲜生、美食1号、金石滩超市）</p><p class='fs-16 margint20'>三、活动规则：用户在超市门店使用扫码购小程序，并使用工行卡微信支付完成交易，即有机会享受最低1元，最高99元随机立减优惠（立减金额不超过交易金额），名额有限，先到先得！</p><p class='fs-16 margint20'>注：同一用户每日仅限享受1次随机立减优惠。同一微信号、同一手机号码、同一银行卡号、同一身份证号码、同一手机设备，符合其中一个条件者视为同一用户。如发生全额退货，仅退还客户实际支付金额；如发生部分退货，则按比例退还客户实际支付的金额。</p><div class='text-center margint20'><img src='/static/img/new/img-news_12_3.png' alt=''></div>"
+		},
+		{
+			"hot":0,
+			"id":0,
+			"className":"天狗动态",
+			"enClassName":["TIANGOU","NEWS"],
+			"title":"天狗网海外购稳步发展，好品质源自产地直采。",
+			"source":"大商集团报",
+			"date":"2019/07/12",
+			"content":"<div class='text-center'><img src='/static/img/new/img-news_11_1.png' alt='' width='880'></div><p class='fs-16 margint30'>海外购是大商天狗网为广大用户提供的海外商品专设频道，旨在顺应国家大力支持跨境电子商务发展的趋势，在全球范围内整合优质品牌商品，向天狗网千万会员及广大用户提供物美价优的全球直采速达到家服务。</p><p class='margint40 fs-16 text-bolder'>SKU——严格供应商筛选，千款SKU销售</p><p class='fs-16 margint30'>天狗海外购通过严格的供应商筛选、采购链路管理和优质的售后政策，确保提供正规、优质的全球品牌商品放心购买渠道，以提升会员对天狗网的黏性和活跃度。目前涉及美妆护肤、营养保健、家居清洁、母婴用品和海外美食等主要五大类热销品牌商品，世界各个国家千款热销SKU在线销售。</p><div class='text-center'><img src='/static/img/new/img-news_11_2.png' alt='' width='600' class='margint40'></div><p class='margint40 text-bolder text-darker fs-16'>品牌产地采购，保真到源头</p><p class='fs-16 margint30'>天狗海外购通过保税备货、海外直邮和一般贸易等多种方式进行合作，目前，已在郑州、大连自建大商天狗网自营仓。大商天狗自营仓深入海外品牌源头产地，从海外品牌商直接采购商品，极大地缩减了国内用户海购直邮的等候时间，并保证每一件商品源出真品，让用户买的放心、用的舒心。</p><div class='text-center'><img src='/static/img/new/img-news_11_3.png' alt='' width='600' class='margint40'></div><p class='margint40 text-bolder text-darker fs-16'>面膜衣柜就陪，7日比较政策</p><p class='margint30 fs-16'>为更好的丰富天狗用户的购物体验，提升天狗网品牌的影响力。天狗海外购网罗品牌商资源，设置 “面膜一贵就赔”专区——在天狗海外购特定专区选购面膜商品，天狗网承诺用户支付订单起7日内，凡购买价格高于该商品在其他渠道的，可以申请“一贵就赔”，天狗海外购将依据政策以补贴现金券的形式返还差价，切实做到让用户大胆购，放心购。</p><div class='text-center'><img src='/static/img/new/img-news_11_4.png' alt='' width='600' class='margint40'></div>"
+		},
+		{
+			"hot":0,
+			"id":0,
 			"className":"天狗动态",
 			"enClassName":["TIANGOU","NEWS"],
 			"title":"跨境品牌注册！天狗网与韩国SNP品牌正式签署授权书！",
 			"source":"大商集团报",
-			"message":"天狗大连保税仓上线，大连地区甚至东北地区的用户可享受更加快捷的海外购服务，最快可实现当日达，让大家深度感受到家门口就是全世界！",
 			"date":"2019/05/17",
 			"content":"<div class='text-center'><img src='/static/img/new/img-news_10_1.png' alt=''></div><p class='margint40 fs-16'>4月，韩国SNP公司代表一行抵达大连，与大商天狗网代表举行品牌授权签约仪式。</p><p class='fs-16 margint30'>会议期间，双方签署了一系列战略合作方案，并积极拓展了整合营销、品牌传播、公关合作等更多维度的合作意向。</p><div class='text-center'><img src='/static/img/new/img-news_10_2.png' alt='' class='margint40'></div><div class='text-center'><img src='/static/img/new/img-news_10_3.png' alt='' class='margint40'></div><p class='margint40 text-bolder text-darker fs-16'>SNP&nbsp;——韩国知名护肤品牌</p><p class='fs-16 margint30'>SNP在韩国属于中高档护肤品，这是一个来自韩国SD生物科技有限公司的品牌，英文全称是“Shining Nature Purity”,意为邂逅光彩自然又纯净的自我。SNP原本是从供应化妆品原料和素材的供应商做起的，所以对原料的识别和管理上有着非常大的优势；其追寻最上等的原料，奠定了业务开发的基石。</p><p class='fs-16 margint30'>SNP在韩国是一个很有知名度的牌子，在韩国电视购物中经常居于首位——在韩国全国网上突破了98%的消费者满足度，旗下动物面膜、海洋燕窝面膜、黄金面膜等，都具有较高的影响力，极受亚洲人群欢迎。</p><div class='text-center'><img src='/static/img/new/img-news_10_4.png' alt='' class='margint40'></div><p class='margint40 text-bolder text-darker fs-16'>天狗&nbsp;——品牌授权版图扩大</p><p class='margint30 fs-16'>天狗网一直秉承大商集团采购全球稀缺品，减少中转商，为用户提供质优价廉商品的指导思想，致力于提升用户的购物体验，遂开展与品牌商直接合作，深入品牌源产地，与品牌商直接合作的发展战略。目前，天狗网已与全球多家品牌商达成合作，品牌授权的版图不断扩大。</p><p class='margint30 fs-16'>美妆、保健、瘦身、家居等多个领域，均有涉猎，未来，天狗网将进一步扩大天狗美妆品类的影响力，将以更优惠的价格，更真实的品质，更完善的服务，成为用户美妆购物首选之地。</p><div class='text-center'><img src='/static/img/new/img-news_10_5.png' alt='' class='margint40'></div><p class='margint40 text-bolder text-darker fs-16'>正品溯源 买得放心</p><p class='margint30 fs-16'>除了不断新增品牌授权，天狗网在用户体验上也做了改进。天狗网海外购上线了正品溯源功能，用户在下单购物的时候，可以经由指定入口来查询商品来源，会有详细的溯源信息、批次追溯等，让用户买得放心，用得安心。</p><div class='text-center'><img src='/static/img/new/img-news_10_6.png' alt='' class='margint40'></div>"	
 		},
 		{
 			"hot":0,
 			"id":0,
-			"imageUrl":"/static/img/new/img-news_default.png",
 			"className":"天狗动态",
 			"enClassName":["TIANGOU","NEWS"],
 			"title":"天狗赋能消费升级新模式，超级卖手来了！",

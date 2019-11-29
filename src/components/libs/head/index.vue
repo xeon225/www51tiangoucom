@@ -68,6 +68,10 @@ export default {
         {
           name:"商家入驻",
           url:"/store/index.html"
+        },
+        {
+          name:"关于我们",
+          url:"/store/contact.html"
         }
       ],
       prData:[
