@@ -189,7 +189,7 @@ const webpackConfig = merge(baseWebpackConfig, {
     new HtmlWebpackPlugin({
       filename: process.env.NODE_ENV === 'testing'
         ? '/store/contact.html'
-        : config.build.index,
+        : config.build.contact,
       template: './tpl/store/contact.html',
       inject: true,
       minify: {

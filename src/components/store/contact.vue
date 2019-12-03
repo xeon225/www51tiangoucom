@@ -2,7 +2,7 @@
   <div id="contact">
     <!-- 头部导航 -->
     <div class="content">
-      <tg-head :active="1"></tg-head>
+      <tg-head :active="4"></tg-head>
     </div>
     <div class="bannerS flex-container">
       <div class="content flex-container-col left">

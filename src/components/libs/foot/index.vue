@@ -56,17 +56,17 @@
               <div class="color_1 margint10 lh-20">服务时间：周一至周日 9:00-21:00（节假日 9:00-18:00）</div>
               <div class="margint30 fs-18" style="line-height: 22px;">招商合作</div>
               <div class="flex-container left color_1 margint20 lh-20">
-                <span>电话：</span><span class="fs-18">0411-83880450</span><span>（海外进口商品合作）</span>
+                <span>电话：</span><span class="fs-18">0411-83880450</span><span>（跨境进口品牌合作）</span>
               </div>
               <div class="flex-container left color_1 margint10 lh-20">
                 <span style="min-width:42px;"></span><span class="fs-18">010-84417059</span><span class="marginl10">（国内品牌商品合作）</span>
               </div>
-              <div class="color_1 margint10 lh-20">邮箱：zhangzheng@51tiangou.com</div>
+              <div class="color_1 margint10 lh-20">邮箱：BD@51tiangou.com</div>
               <div class="margint30 fs-18" style="line-height: 22px;">商务合作</div>
               <div class="flex-container left color_1 margint20 lh-20">
                 <span>电话：</span><span class="fs-18">0411-83880681</span>
               </div>
-              <div class="color_1 margint10 lh-20">邮箱：hanxiuhong@51tiangou.com</div>
+              <div class="color_1 margint10 lh-20">邮箱：BD@51tiangou.com</div>
             </div>
           </div>
           
@@ -74,7 +74,7 @@
         </div>
       </div>
       <div class="fs-12 paddingb40 paddingt10" style="border-top: 1px solid #000000;color: #BFC3C6;">
-        <div class="flex-container left"><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=21020202000055" target="blank" class="flex-container left" style="height:17px;line-height: 17px;"><img src="/static/img/ba.png" width="12" alt="" style="padding-bottom: 2px;"></a> <div class="flex1 marginl5"><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=21020202000055" target="blank">辽公网安备 21020202000055号</a>  |  辽ICP备13005630号-2  |  增值电信业务经营许可证： 辽B2-20140019</div></div>
+        <div class="flex-container left"><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=21020202000055" target="blank" class="flex-container left" style="height:17px;line-height: 17px;"><img src="/static/img/ba.png" width="12" alt="" style="padding-bottom: 2px;"></a> <div class="flex1 marginl5">辽ICP备13005630号-2 | 增值电信业务经营许可证： 辽B2-20140019 | 广播电视节目制作：辽字第00705号</div></div>
         <div>Copyright  ©  大连大商天狗电子商务有限公司版权所有<span class="marginh10">|</span><a href="/business/index.html?id=1">经营证照</a><span class="marginh10">|</span><a @click="showImgUrl = !showImgUrl">营业执照</a><span class="marginh10">|</span><a @click="showImgUrl = !showImgUrl">食品流通许可</a><span class="marginh10">|</span><a href="/consumption/index.html">保健食品消费提示</a></div>
         </div>
       </div>
