@@ -6,7 +6,12 @@
     </div>
     <div class="bg-store">
       <div class="content paddingt50">
-        <img src="/static/img/text-store_1.png" alt="" class="marginl50">
+        <div class="marginl50 text-white">
+          <p class="text-bolder" style="font-size: 60px;">天狗商家入驻指南</p>
+          <p class="margint10" style="font-size: 33px;">用心开好店，打造大事业，天狗诚邀优质品牌，<br>
+            共同展望美好未来！</p>
+        </div>
+        <!-- <img src="/static/img/text-store_1.png" alt="" class="marginl50"> -->
         <div class="marginl50 margint30 paddingb20">
           <div class="btn round big white"><a href="mailto:cooperate@51tiangou.com">马上申请</a></div>
           <div class="btn round big reverse white marginl30"><a href="/static/xls/商家入驻表格.xlsx">下载申请资料</a></div>

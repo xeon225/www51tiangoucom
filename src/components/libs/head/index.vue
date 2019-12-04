@@ -28,7 +28,7 @@
               </div>
             </div>
           </div>
-          <span class="margint25"><img src="/static/img/title-appDown.png" height="24" alt=""></span>
+          <span class="margint25">手机扫描快速下载</span>
         </div>
         <div class="pos-a right0" style="top:-60px;cursor: pointer;" @click="prShowFn(false)"><i class="baseIcon-roundclose text-white" style="font-size:40px;"></i></div>
       </div>
