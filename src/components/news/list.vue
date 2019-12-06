@@ -22,7 +22,7 @@
               </div>
               <span class="ellipsis_3-after ellipsis-after" style="display: none;"> ... </span>
             </div>
-            <div v-text="item.date.replace(/\//g, '-')" style="min-width: 100px;"></div>
+            <div class="fs-16" v-text="item.date.replace(/\//g, '-')" style="min-width: 100px;"></div>
           </div>
         </div>
 
