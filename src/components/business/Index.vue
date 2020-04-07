@@ -16,7 +16,7 @@
         </div>
         <div class="padding40">
           <div class="text-center">
-            <div class="text-bolder" style="font-size:36px;">天狗网经营商品经营者资质信息公示</div>
+            <div class="text-bolder" style="font-size:36px;">大商天狗网经营商品经营者资质信息公示</div>
             <div class="fs-18">根据国家相关政策要求对经营者资质信息公示如下</div>
           </div>
           <div class="margint30 border clearfix fs-18">

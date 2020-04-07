@@ -49,9 +49,9 @@ export default {
   data () {
     return {
       msg: {
-        enL:"TIANGOU",
+        enL:"DASHANG TIANGOU",
         enR:"NEWS",
-        title:"天狗动态"
+        title:"大商天狗网动态"
       },
       newShow:false,
       newClass:''
@@ -85,8 +85,8 @@ export default {
       } else {
         this.newShow = false;
         let data = {
-          enClassName:['TIANGOU','NEWS'],
-          className:"天狗动态"
+          enClassName:['DASHANG TIANGOU','NEWS'],
+          className:"大商天狗网动态"
         }
         return data[name]
       }

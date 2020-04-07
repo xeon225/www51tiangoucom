@@ -30,7 +30,7 @@
             </div>
           </div>
           <div>
-            <div class="text-white fs-18 margint10">关注天狗</div>
+            <div class="text-white fs-17 margint10">关注大商天狗</div>
             <div class="flex-container left top fs-14 margint10" style="color: #BFC3C6;">
               <div class="marginr50">
                 <img src="/static/img/pr-App.png" width="100" height="100" alt="" class="margint5">

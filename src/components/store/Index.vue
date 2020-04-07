@@ -7,8 +7,8 @@
     <div class="bg-store">
       <div class="content paddingt50">
         <div class="marginl50 text-white">
-          <p class="text-bolder" style="font-size: 60px;">天狗商家入驻指南</p>
-          <p class="margint10" style="font-size: 33px;">用心开好店，打造大事业，天狗诚邀优质品牌，<br>
+          <p class="text-bolder" style="font-size: 60px;">大商天狗商家入驻指南</p>
+          <p class="margint10" style="font-size: 33px;">用心开好店，打造大事业，大商天狗诚邀优质品牌，<br>
             共同展望美好未来！</p>
         </div>
         <!-- <img src="/static/img/text-store_1.png" alt="" class="marginl50"> -->
@@ -33,7 +33,7 @@
                 <div class="fs-18 marginl20 flex1">
                   <div class="btn store green">申请资格查询</div>
                   <div class="lh-32 margint20">
-                    <span style="color:#2AB795">企业：</span>合法登记的企业，满足入驻天狗的所有相关要求（<a href="/static/xls/商家入驻表格.xlsx" style="color:#2AB795">《入驻要求》</a>），不接受个体工商户入驻；
+                    <span style="color:#2AB795">企业：</span>合法登记的企业，满足入驻大商天狗的所有相关要求（<a href="/static/xls/商家入驻表格.xlsx" style="color:#2AB795">《入驻要求》</a>），不接受个体工商户入驻；
                   </div>
                 </div>
               </div>
@@ -71,7 +71,7 @@
         <div class="flex-container top pos-r">
           <div class="flex1" style="padding-bottom:290px;">
             <div style="padding-right:110px; padding-top:120px;">
-              <div class="text-right" style="color:#2AB795;font-size:34px;">阶段二  [ 等待天狗审核 ]</div>
+              <div class="text-right" style="color:#2AB795;font-size:34px;">阶段二  [ 等待大商天狗审核 ]</div>
               <div class="flex-container right top fs-18 margint50">
                   <div class="btn store green">审核资质有效性和是否符合入驻要求</div>
               </div>
@@ -102,7 +102,7 @@
                   <img src="/static/img/icon-01.png" width="60" alt="">
                 </div>
                 <div class="fs-18 marginl20 flex1">
-                  <div class="btn store green">同意入驻天狗协议</div>
+                  <div class="btn store green">同意入驻大商天狗协议</div>
                 </div>
               </div>
               <div class="flex-container left margint25">

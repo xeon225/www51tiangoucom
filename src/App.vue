@@ -47,10 +47,10 @@
         </div>
       </div>
     </div>
-    <!-- 天狗商务动态 -->
+    <!-- 大商天狗商务动态 -->
     <div class="content" style="margin-top:60px;">
-      <div class="text-bolder" style="font-size: 38px;">天狗<span class="text-red">动态</span></div>
-      <div class="fs-18 text-light margint5 text-lighter">TIANGOU NEWS</div>
+      <div class="text-bolder" style="font-size: 38px;">大商天狗网<span class="text-red">动态</span></div>
+      <div class="fs-18 text-light margint5 text-lighter">DASHANG TIANGOU NEWS</div>
       <div class="flex-container vfull" style="margin-top:40px;">
         <div class="flex-container vfull shadow padding30" style="width:750px;">
           <div style="width:280px;">
@@ -82,11 +82,11 @@
       </div>
     </div>
 
-    <!-- 天狗2017大数据 -->
+    <!-- 大商天狗2017大数据 -->
     <div class="dataReport" style="padding-bottom:75px;">
       <div class="content">
-        <div class="text-bolder" style="font-size: 38px;">天狗2018<span class="text-red">大数据</span></div>
-        <div class="fs-18 text-light margint5 text-lighter">TIANGOU DATA ANNUAL REPORT</div>
+        <div class="text-bolder" style="font-size: 38px;">大商天狗网2018<span class="text-red">大数据</span></div>
+        <div class="fs-18 text-light margint5 text-lighter">DASHANG TIANGOU DATA ANNUAL REPORT</div>
         <div class="flex-container text-center margint50">
           <div class="flex1" v-for="(item,$index) in iconReportData">
             <div class="flex-container center bottom" style="height:120px;">
@@ -132,7 +132,7 @@ export default {
           enName:"Counters cashier",
           color:"background-image: -webkit-linear-gradient(left top , rgb(255, 255, 255) 0%, #26A8FF 90%);",
           colorIE:"color:#26A8FF",
-          content:"取代专柜开票，顾客款台排队结算的模式。通过天狗网完成交易支付并提货，购物方便又快捷。"
+          content:"取代专柜开票，顾客款台排队结算的模式。通过大商天狗网完成交易支付并提货，购物方便又快捷。"
         },
         {
           name:"云货架",
@@ -166,7 +166,7 @@ export default {
           enName:"Sweep shopping",
           color:"background-image: -webkit-linear-gradient(left top , rgb(255, 255, 255) 0%, #FF5B00 90%);",
           colorIE:"color:#FF5B00",
-          content:"通过天狗网实现现场扫描超市商品条码加入线上购物车，完成支付后即可离店，摆脱排队结账烦恼。"
+          content:"通过大商天狗网实现现场扫描超市商品条码加入线上购物车，完成支付后即可离店，摆脱排队结账烦恼。"
         },
         {
           name:"极速达",
@@ -196,7 +196,7 @@ export default {
           name:"1200万+",
           pi:"人",
           icon:"baseIcon-icon_1",
-          content:"注册天狗会员数"
+          content:"注册大商天狗会员数"
         },
         {
           name:"660万+",
@@ -208,7 +208,7 @@ export default {
           name:"112亿",
           pi:"元",
           icon:"baseIcon-icon_6",
-          content:"天狗移动支付交易额"
+          content:"大商天狗移动支付交易额"
         },
         {
           name:"超10亿",

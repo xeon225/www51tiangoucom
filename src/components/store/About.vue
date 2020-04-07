@@ -105,7 +105,7 @@ export default {
           enName:"Sweep shopping",
           color:"background-image: -webkit-linear-gradient(left top , rgb(255, 255, 255) 0%, #FF5B00 90%);",
           colorIE:"color:#FF5B00",
-          content:"为超市顾客提供新型的购物体验，顾客通过天狗网实现扫描超市商品条码加入线上购物车，完成支付后即可离店，摆脱排队烦恼。"
+          content:"为超市顾客提供新型的购物体验，顾客通过大商天狗网实现扫描超市商品条码加入线上购物车，完成支付后即可离店，摆脱排队烦恼。"
         },
         {
           name:"极速达",
