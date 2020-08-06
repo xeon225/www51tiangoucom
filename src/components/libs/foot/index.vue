@@ -43,7 +43,7 @@
             </div>
           </div>
         </div>
-        
+
         <div style="border-left: 1px solid #5D5F63;" class="text-white paddingl30 fs-18">
           <div class="fs-14">
             <div style="margin-right:80px;">
@@ -69,17 +69,22 @@
               <div class="color_1 margint10 lh-20">邮箱：BD@51tiangou.com</div>
             </div>
           </div>
-          
-          
+
         </div>
       </div>
       <div class="fs-12 paddingb40 paddingt10" style="border-top: 1px solid #000000;color: #BFC3C6;">
-        <div class="flex-container left"><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=21020202000055" target="blank" class="flex-container left" style="height:17px;line-height: 17px;"><img src="/static/img/ba.png" width="12" alt="" style="padding-bottom: 2px;"></a> <div class="flex1 marginl5">辽ICP备13005630号-2 | 增值电信业务经营许可证： 辽B2-20140019 | 广播电视节目制作：辽字第00705号</div></div>
-        <div>Copyright  ©  大连大商天狗电子商务有限公司版权所有<span class="marginh10">|</span><a href="/business/index.html?id=1">经营证照</a><span class="marginh10">|</span><a @click="showImgUrl = !showImgUrl">营业执照</a><span class="marginh10">|</span><a @click="showImgUrl = !showImgUrl">食品流通许可</a><span class="marginh10">|</span><a href="/consumption/index.html">保健食品消费提示</a></div>
+        <div class="flex-container left"><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=21020202000055" target="blank" class="flex-container left" style="height:17px;line-height: 17px;"><img src="/static/img/ba.png" width="12" alt="" style="padding-bottom: 2px;"></a> <div class="flex1 marginl5"><a href="http://www.beian.miit.gov.cn/" target="blank">辽ICP备13005630号-4</a> | 增值电信业务经营许可证： 辽B2-20140019 | 广播电视节目制作：辽字第00705号 | <a href="http://www.lnjubao.cn" target="blank">省举报入口</a></div></div>
+        <div>Copyright  ©  大连大商天狗电子商务有限公司版权所有<span class="marginh10">|</span><a href="/business/index.html?id=1">经营证照</a><span class="marginh10">|</span><a @click="showImgUrl3 = !showImgUrl3">营业执照</a><span class="marginh10">|</span><a @click="showImgUrl = !showImgUrl">食品经营许可</a><span class="marginh10">|</span><a href="/consumption/index.html">保健食品消费提示</a><span class="marginh10">|</span><a @click="showImgUrl2 = !showImgUrl2">出版物经营许可证</a></div>
         </div>
       </div>
       <div class="mask flex-container center" @click="showImgUrl = !showImgUrl" style="display:none" v-show="showImgUrl">
-        <img src="/static/img/business/0001.jpg" alt="">
+        <img src="/static/img/business/0002.jpg" alt="">
+      </div>
+      <div class="mask flex-container center" @click="showImgUrl2 = !showImgUrl2" style="display:none" v-show="showImgUrl2">
+        <img src="/static/img/business/0003.jpg" alt="">
+      </div>
+      <div class="mask flex-container center" @click="showImgUrl3 = !showImgUrl3" style="display:none" v-show="showImgUrl3">
+        <img src="/static/img/business/0004.jpg" alt="">
       </div>
     </div>
   </div>
@@ -90,16 +95,18 @@ export default {
   name: 'foot',
   data () {
     return {
-      showImgUrl:false
+      showImgUrl: false,
+      showImgUrl2: false,
+      showImgUrl3: false
     }
   },
   methods: {
-    serviceItem(id){
-      let data = this.common.serviceData();  //证件数据
+    serviceItem (id) {
+      let data = this.common.serviceData() // 证件数据
       // let id = this.common.getUrlKey('id') || 1; //取新闻ID
       // console.log(id)
       // this.num = data['data_'+id].length;
-      return data[id];
+      return data[id]
     }
   }
 }
