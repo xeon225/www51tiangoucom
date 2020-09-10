@@ -73,8 +73,38 @@
         </div>
       </div>
       <div class="fs-12 paddingb40 paddingt10" style="border-top: 1px solid #000000;color: #BFC3C6;">
-        <div class="flex-container left"><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=21020202000055" target="blank" class="flex-container left" style="height:17px;line-height: 17px;"><img src="/static/img/ba.png" width="12" alt="" style="padding-bottom: 2px;"></a> <div class="flex1 marginl5"><a href="http://www.beian.miit.gov.cn/" target="blank">辽ICP备13005630号-4</a> | 增值电信业务经营许可证： 辽B2-20140019 | 广播电视节目制作：辽字第00705号 | <a href="http://www.lnjubao.cn" target="blank">省举报入口</a></div></div>
-        <div>Copyright  ©  大连大商天狗电子商务有限公司版权所有<span class="marginh10">|</span><a href="/business/index.html?id=1">经营证照</a><span class="marginh10">|</span><a @click="showImgUrl3 = !showImgUrl3">营业执照</a><span class="marginh10">|</span><a @click="showImgUrl = !showImgUrl">食品经营许可</a><span class="marginh10">|</span><a href="/consumption/index.html">保健食品消费提示</a><span class="marginh10">|</span><a @click="showImgUrl2 = !showImgUrl2">出版物经营许可证</a></div>
+        <div class="flex-container left">
+          <span>2020  ©</span>
+          <span class="marginh10">|</span>
+          <span>大连大商天狗电子商务有限公司版权所有</span>
+          <span class="marginh10">|</span>
+          <a href="http://www.beian.miit.gov.cn/" target="blank">辽ICP备13005630号-2</a>
+          <span class="marginh10">|</span>
+          <span>辽B2-20140019</span>
+        </div>
+        <div class="flex-container left">
+          <span>网络文化许可证-辽网文-（2020）3277-038号</span>
+          <span class="marginh10">|</span>
+          <span>广播电视节目制作：辽字第00705号</span>
+          <span class="marginh10">|</span>
+          <span>违法和不良信息举报：024-81680063</span>
+        </div>
+        <div class="flex-container left">
+          <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=21020202000055" target="blank" class="flex-container left" style="height:17px;line-height: 17px;"><img src="/static/img/ba.png" width="12" alt="" style="padding-bottom: 2px;margin-right:3px;">辽公网安备：21020202000055号</a>
+          <span class="marginh10">|</span>
+          <a href="/business/index.html?id=1">经营证照</a>
+          <span class="marginh10">|</span>
+          <a @click="showImgUrl3 = !showImgUrl3">营业执照</a>
+          <span class="marginh10">|</span>
+          <a @click="showImgUrl = !showImgUrl">食品经营许可</a>
+          <span class="marginh10">|</span>
+          <a href="/consumption/index.html">保健食品消费提示</a>
+          <span class="marginh10">|</span>
+          <a @click="showImgUrl2 = !showImgUrl2">出版物经营许可证</a>
+        </div>
+<!--         <div class="flex-container left"><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=21020202000055" target="blank" class="flex-container left" style="height:17px;line-height: 17px;"><img src="/static/img/ba.png" width="12" alt="" style="padding-bottom: 2px;"></a><div class="flex1 marginl5"><a href="http://www.beian.miit.gov.cn/" target="blank">辽ICP备13005630号-2</a><span class="marginh10">|</span>辽网文（2020）3277-038号<span class="marginh10">|</span>增值电信业务经营许可证： 辽B2-20140019<span class="marginh10">|</span>广播电视节目制作：辽字第00705号</div></div>
+        <div>2020  ©  大连大商天狗电子商务有限公司版权所有<span class="marginh10">|</span><a href="/business/index.html?id=1">经营证照</a><span class="marginh10">|</span><a @click="showImgUrl3 = !showImgUrl3">营业执照</a><span class="marginh10">|</span><a @click="showImgUrl = !showImgUrl">食品经营许可</a><span class="marginh10">|</span><a href="/consumption/index.html">保健食品消费提示</a><span class="marginh10">|</span><a @click="showImgUrl2 = !showImgUrl2">出版物经营许可证</a></div>
+        <div><a href="http://www.lnjubao.cn" target="blank">省举报入口</a></div> -->
         </div>
       </div>
       <div class="mask flex-container center" @click="showImgUrl = !showImgUrl" style="display:none" v-show="showImgUrl">
